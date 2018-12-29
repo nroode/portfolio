@@ -1,0 +1,20 @@
+@import 'Variables.scss';
+
+.about-container {
+    margin-bottom: 3rem;
+    background: #c1d045;  
+    background: -webkit-linear-gradient(to right, #adb93c,#c1d045);  
+    background: linear-gradient(to right, #adb93c, #c1d045); 
+    min-height: 100vh;
+}
+
+.about-intro {
+    font-family: $font-secondary;
+    font-size: 5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.about-section {
+    margin: 0 15rem;
+}

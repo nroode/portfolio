@@ -1,0 +1,25 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo-container {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.logo {
+    border: 1px solid white;
+    display: inline-block;
+    padding: .5rem;
+}
+
+.nav-section-links {
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+p {
+    padding: 1rem;
+    display: inline-block;
+}

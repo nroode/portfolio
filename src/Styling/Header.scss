@@ -1,0 +1,64 @@
+@import 'Navigation.scss';
+@import 'Variables.scss';
+
+
+.header-container {
+    background: #ff9966;  
+    background-image: -webkit-linear-gradient(to right, #ff5e62, #ff9966), 
+                url(geo-pattern.png); 
+    background: linear-gradient(to right, #ff5e62, #ff9966),
+                url(geo-pattern.png);  
+
+    background-blend-mode: multiply; 
+    background-size: cover;
+    margin-bottom: 3rem;
+    height: 100vh;
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
+        
+        
+    
+}
+
+.header-description {
+    max-width: 65rem;
+    
+    &-container {
+        margin-left: 15rem;
+        margin-right: 15rem;
+        margin-top: 7rem;
+    }
+}
+
+.header-intro {
+    font-family: $font-secondary;
+    font-size: 5rem;
+    padding: 0;
+    margin: 0;
+
+    &-tagline {
+        color: $light-pink;
+        font-size: 4rem;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.line-horiz-header {
+    
+    max-width: 10rem;
+    display: block;
+    margin-left: 0;
+    background-color: $light-orange;
+    border: none;
+    height: 3px;
+    border-radius: 1rem;
+}
+
+.fa-envelope, .fa-github, .fa-linkedin-in {
+    font-size: 3rem;
+    padding: 1rem;
+}
