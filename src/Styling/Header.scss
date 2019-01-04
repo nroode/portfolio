@@ -11,7 +11,7 @@
 
     background-blend-mode: multiply; 
     background-size: cover;
-    margin-bottom: 3rem;
+    margin-bottom: $outside-margin;
     height: 100vh;
     box-sizing: border-box;
     
@@ -26,9 +26,9 @@
     max-width: 65rem;
     
     &-container {
-        margin-left: 15rem;
-        margin-right: 15rem;
-        margin-top: 7rem;
+        margin-left: $inside-margin;
+        margin-right: $inside-margin;
+        margin-top: 15vh;
     }
 }
 

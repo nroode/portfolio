@@ -4,3 +4,25 @@
     background: linear-gradient(to right, #5B86E5, #36D1DC); 
     min-height: 100vh;
 }
+
+.projects-section {
+    margin: 0 $inside-margin;
+    padding: 10rem 0;
+
+    &-title {
+        font-family: $font-secondary;
+        font-size: 5rem;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.line-horiz-projects {
+    max-width: 10rem;
+    display: block;
+    margin-left: 0;
+    background-color: $light-blue;
+    border: none;
+    height: 3px;
+    border-radius: 1rem;
+}

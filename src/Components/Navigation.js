@@ -7,8 +7,8 @@ function Navigation() {
                 <div className="logo">NR</div>
             </div>
             <div className="nav-section-links">
-                <p>About</p>
-                <p>Projects</p>
+                <p className="nav-section">About</p>
+                <p className="nav-section">Projects</p>
             </div>
         </div>
     )

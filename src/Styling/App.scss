@@ -1,18 +1,19 @@
 @import 'About.scss';
 @import 'Header.scss';
+@import 'Project.scss';
 @import 'Projects.scss';
 @import 'Variables.scss';
 
 
 .App {
-  margin: 3rem;
+  margin: $outside-margin;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   color: white;
   box-sizing: border-box;
-  font-family: 'Thasadith', sans-serif;
-  font-weight: 700;
+  font-family: $font-primary;
+  // font-weight: 700;
   font-size: 2rem;
 }
 

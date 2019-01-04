@@ -1,20 +1,74 @@
 @import 'Variables.scss';
 
 .about-container {
-    margin-bottom: 3rem;
-    background: #c1d045;  
-    background: -webkit-linear-gradient(to right, #adb93c,#c1d045);  
-    background: linear-gradient(to right, #adb93c, #c1d045); 
+    margin-bottom: $outside-margin;
+    background: $med-green;  
+    background: -webkit-linear-gradient(to right, #aab63c, $med-green);  
+    background: linear-gradient(to right, #aab63c, $med-green); 
     min-height: 100vh;
+    box-sizing: border-box;
 }
 
-.about-intro {
+.about-section-title {
     font-family: $font-secondary;
     font-size: 5rem;
     padding: 0;
     margin: 0;
 }
 
+.about-section-detail {
+    display: flex;
+
+}
+
+.about-skills {
+    flex-grow: 1;
+    display: inline-block;
+    border-left: 1px solid $light-green;
+    padding-left: 2rem;
+
+    &-title {
+        font-family: $font-secondary;
+        font-size: 3rem;
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    &-list {
+        list-style-type: none;
+        padding-left: 0;  
+        margin-top: 0;
+        
+    }
+}
+
+.about-skill {
+    font-weight: 700;
+    color: $lightest-green;
+}
+
+.about-story {
+    flex-grow: 2;
+    display: inline-block;
+    // text-align: justify;
+    padding-right: 2rem;
+    color: $lightest-green;
+    font-size: 3rem;
+}
+
+
 .about-section {
-    margin: 0 15rem;
+    margin: 0 $inside-margin;
+    padding: 10rem 0;
+}
+
+.line-horiz-about {
+    max-width: 10rem;
+    display: block;
+    margin-left: 0;
+    background-color: $light-green;
+    border: none;
+    height: 3px;
+    border-radius: 1rem;
 }
