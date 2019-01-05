@@ -6,7 +6,7 @@
 
 
 .App {
-  margin: $outside-margin;
+  // margin: $outside-margin;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,6 +15,62 @@
   font-family: $font-primary;
   // font-weight: 700;
   font-size: 2rem;
+  
+  transition: all 2s;
+  -webkit-transition:  all 2s;
+    -ms-transition: all 2s;
+
+    background: #ff9966;  
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966), 
+                url(geo-pattern.png); 
+    background: linear-gradient(to right, #ff5e62, #ff9966),
+                url(geo-pattern.png);  
+
+}
+
+// .bk-pink-gradient {
+//   opacity: 1;
+//   background: #ff9966;  
+//   background: -webkit-linear-gradient(to right, #ff5e62, #ff9966), 
+//               url(geo-pattern.png); 
+//   background: linear-gradient(to right, #ff5e62, #ff9966),
+//               url(geo-pattern.png);  
+// }
+
+.bk-purple-gradient {
+  // background: #42275a;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  background: #ad5389;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.bk-blue-gradient {
+  background: #36D1DC;  
+  background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  
+  background: linear-gradient(to right, #5B86E5, #36D1DC); 
+}
+
+.bk-teal-gradient {
+  background: #136a8a;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.bk-green-gradient {
+  // background: $med-green;  
+  // background: -webkit-linear-gradient(to right, #aab63c, $med-green);  
+  // background: linear-gradient(to right, #aab63c, $med-green); 
+  background: #11998e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 

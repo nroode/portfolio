@@ -31,8 +31,8 @@ let featuredProjects = [
         tech: ['HTML', 'CSS', 'Vanilla JavaScript',],
         description: 'This productivity app is a go-to source for daily weather and top news stories.  Keep track of tasks in the to-do list and enjoy some classical music while working.  The app also displays the current date and time and each time the app is opened, a beautiful new image is displayed (courtesy of Unsplash).',
         github: true,
-        githubLink: 'www.facebook.com',
-        liveDemo: 'https://staging--better-groceries.netlify.com/',
+        githubLink: 'https://github.com/chingu-voyage5/Geckos-Team-15',
+        liveDemo: 'https://chingu-voyage5.github.io/Geckos-Team-15/',
         image: ChinguProd1,
         imageSecondary: ChinguProd2,
         colorSecondary: 'project-demo-btn accent-blue',
@@ -54,9 +54,7 @@ function Projects() {
                     featuredProjects={{...featuredProjects[i]}}
                      />
                 )}
-                    
                 </div>
-
             </div>
         </div>
     )

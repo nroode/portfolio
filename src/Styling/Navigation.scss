@@ -9,9 +9,10 @@
 }
 
 .logo {
-    border: 1px solid white;
+    border: 2px solid #ff9966;
     display: inline-block;
     padding: .5rem;
+    font-weight: 700;
 }
 
 .nav-section-links {
@@ -20,6 +21,8 @@
 }
 
 .nav-section {
-    padding: 1rem;
+    padding: 1rem 1.5rem 1rem 0rem;
     display: inline-block;
+    margin: 0;
+    font-size: 1.5rem;
 }

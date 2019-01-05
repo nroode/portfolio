@@ -3,11 +3,11 @@
 
 
 .header-container {
-    background: #ff9966;  
-    background-image: -webkit-linear-gradient(to right, #ff5e62, #ff9966), 
-                url(geo-pattern.png); 
-    background: linear-gradient(to right, #ff5e62, #ff9966),
-                url(geo-pattern.png);  
+    // background: #ff9966;  
+    // background: -webkit-linear-gradient(to right, #ff5e62, #ff9966), 
+    //             url(geo-pattern.png); 
+    // background: linear-gradient(to right, #ff5e62, #ff9966),
+    //             url(geo-pattern.png);  
 
     background-blend-mode: multiply; 
     background-size: cover;

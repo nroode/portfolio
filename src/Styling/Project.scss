@@ -9,10 +9,12 @@
 .project-image {
     width: 100%;
     box-shadow: 1px 1px 10px rgba(23, 64, 100, 0.393);
-    border: 5px solid white;
+    // border: 2px solid white;
     margin: 1rem 0rem;
+    z-index: 3;
     // display: inline-block;
 }
+
 
 // .project-title {
 //     font-weight: 400;
@@ -26,9 +28,13 @@ h2, h3 {
 .project-section-left, .project-section-right {
     display: inline-block;
     width: 50%;
-    
-    
+     
 }
+
+.project-section-left {
+    position: relative;
+}
+
 
 .project-section-right {
     padding-left: 4rem;
@@ -70,10 +76,10 @@ h2, h3 {
 }
 
 .divider {
-    padding: 1rem;
+    padding: 0rem 1rem;
     display: inline-block;
 }
 
-// .project-link-btns {
-//     height: 5rem;
-// }
+.project-link-btns {
+    margin-top: 2rem;
+}
