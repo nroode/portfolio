@@ -11,7 +11,7 @@ class App extends Component {
 
     this.state = {
       isTop: true,
-      colorClass: 'App',
+      colorClass: 'App active',
     };
     // this.onScroll = this.onScroll.bind(this);
     // this.startAnimation = this.startAnimation.bind(this);
@@ -24,10 +24,10 @@ class App extends Component {
   //     });
   //   });
   // }
-  
+
 
   componentDidMount() {
-    
+
     document.addEventListener('scroll', () => {
       //calc px scrolled down from vh
       const windowHeightPx = (window.innerHeight);
@@ -39,49 +39,49 @@ class App extends Component {
       //   this.onScroll(isTop);
 
       if (window.scrollY <= windowHeightPx) {
- 
-        this.setState({ colorClass: 'App' });
-      } 
+
+        this.setState({ colorClass: 'App active' });
+      }
       //if value is between windowHeightPx and 2(windowHeightPx) add purple class - About
-      else if ((window.scrollY <= (windowHeightPx *2)) && (window.scrollY > (windowHeightPx))) {
+      else if ((window.scrollY <= (windowHeightPx * 2)) && (window.scrollY > (windowHeightPx))) {
 
         // requestAnimationFrame(() => {
         //   this.setState({ colorClass: 'App bk-purple-gradient' });
         // });
-        
-          // this.startAnimation(() => {
-          //   this.setState({ colorClass: 'App bk-purple-gradient' });
-          // });
-        
-        this.setState({ colorClass: 'App bk-purple-gradient' });
-        
-        
-      } 
+
+        // this.startAnimation(() => {
+        //   this.setState({ colorClass: 'App bk-purple-gradient' });
+        // });
+
+        this.setState({ colorClass: 'App active bk-purple-gradient' });
+
+
+      }
       //if value is between 2windowHeightPx and 3(windowHeightPx) add blue class - Project 1
-      
-      else if ((window.scrollY <= (windowHeightPx *3)) && (window.scrollY > (windowHeightPx * 2))) {
-        this.setState({ colorClass: 'App bk-blue-gradient' });
 
-      } 
-      
+      else if ((window.scrollY <= (windowHeightPx * 3)) && (window.scrollY > (windowHeightPx * 2))) {
+        this.setState({ colorClass: 'App active bk-blue-gradient' });
+
+      }
+
       //if value is between 3windowHeightPx and 4(windowHeightPx) add teal class - Project 2
-        else if ((window.scrollY <= (windowHeightPx *4)) && (window.scrollY > (windowHeightPx * 3))) {
-        this.setState({ colorClass: 'App bk-teal-gradient' });
-      } 
+      else if ((window.scrollY <= (windowHeightPx * 4)) && (window.scrollY > (windowHeightPx * 3))) {
+        this.setState({ colorClass: 'App active bk-teal-gradient' });
+      }
+      //toggle opacity for the class - if not used opacity = 0, if used opacity = 1
 
+      //check to see how far down the page we've scrolled
 
-        //check to see how far down the page we've scrolled
- 
-        //if value is between 4windowHeightPx and 5(windowHeightPx) add green class - Project 3
+      //if value is between 4windowHeightPx and 5(windowHeightPx) add green class - Project 3
 
-        //if value is greater or equal to 5windowHeightPx add teal class - contact
+      //if value is greater or equal to 5windowHeightPx add teal class - contact
 
       // }
     });
-    
+
   }
 
-  
+
 
   // onScroll(isTop) {
   //   this.setState({ isTop });
@@ -91,13 +91,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <div className={this.state.colorClass}>
+        <div className="App-gradient">
+          <div className={this.state.colorClass}>
 
-        <Header />
-        <About />
-        <Projects />
+            <Header />
+            <About />
+            <Projects />
 
-      </div>
+          </div>
+        </div>
       </div>
     );
   }

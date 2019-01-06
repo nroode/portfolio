@@ -2,6 +2,7 @@ import React from 'react';
 
 function Navigation() {
     return (
+        <div className="nav">
         <div className="nav-container">
             <div className="nav-logo-container">
                 <div className="logo">NR</div>
@@ -12,6 +13,7 @@ function Navigation() {
                 <p className="nav-section">Projects</p>
                 <p className="nav-section">Contact</p>
             </div>
+        </div>
         </div>
     )
 }
