@@ -9,7 +9,7 @@
     // background: linear-gradient(to right, #ff5e62, #ff9966),
     //             url(geo-pattern.png);  
 
-    background-blend-mode: multiply; 
+    // background-blend-mode: multiply; 
     background-size: cover;
     margin-bottom: $outside-margin;
     height: 100vh;
@@ -17,8 +17,7 @@
     
     display: flex;
     flex-direction: column;
-        
-        
+     
     
 }
 
@@ -61,4 +60,10 @@
 .fa-envelope, .fa-github, .fa-linkedin-in {
     font-size: 3rem;
     padding: 1rem;
+
+    
+}
+
+.contact-links a {
+    color: white;
 }

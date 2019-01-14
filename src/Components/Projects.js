@@ -7,7 +7,11 @@ import BetterGroceriesAdmin from './ProjectImages/BetterGroceriesAdmin.png';
 import ChinguProd1 from './ProjectImages/ChinguProd1.png';
 import ChinguProd2 from './ProjectImages/ChinguProd2.png';
 
+import Dragon from './ProjectImages/Dragon.png';
+import Dragon2 from './ProjectImages/Dragon2.png';
+
 let featuredProjects = [
+    
     {
         title: 'Better Groceries',
         role: 'Developer',
@@ -24,6 +28,21 @@ let featuredProjects = [
 
     },
     {
+        title: 'Dragon',
+        role: 'Developer + PM',
+        affiliation: "Chingu Developer Network",
+        subTitle: 'a Trello clone',
+        tech: ['React.js', 'SCSS'],
+        description: 'This is a clone of the popular Trello app.  Users can create lists, cards and drag and drop these items.  They have the ability to customize the look of the board by selecting an alternate background.  Members can also be added to the board.',
+        github: true,
+        githubLink: 'https://github.com/chingu-voyage7/Geckos-Team-14',
+        liveDemo: 'https://chingu-voyage7.github.io/Geckos-Team-14/',
+        image: Dragon,
+        imageSecondary: Dragon2,
+        colorSecondary: 'project-demo-btn accent-purple',
+
+    },
+    {
         title: 'Productivity App',
         role: 'Designer + Developer + PM',
         affiliation: "Chingu Developer Network",
@@ -35,7 +54,7 @@ let featuredProjects = [
         liveDemo: 'https://chingu-voyage5.github.io/Geckos-Team-15/',
         image: ChinguProd1,
         imageSecondary: ChinguProd2,
-        colorSecondary: 'project-demo-btn accent-blue',
+        colorSecondary: 'project-demo-btn accent-teal',
 
     },
 
@@ -55,6 +74,7 @@ function Projects() {
                      />
                 )}
                 </div>
+                <p>For more projects, check out my gitHub</p>
             </div>
         </div>
     )

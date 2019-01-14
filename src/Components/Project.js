@@ -10,7 +10,7 @@ export default class Project extends Component {
             <div className="project-container">
                 
                     <div className="project-section-left">
-                        <div>
+                        <div className="project-images">
                             <img src={this.props.featuredProjects.image} className="project-image"></img>
                             <img src={this.props.featuredProjects.imageSecondary} className="project-image"></img>
                         </div>

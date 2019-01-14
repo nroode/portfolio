@@ -2,7 +2,7 @@
     display: flex;
     flex: 1 1 auto;
     margin: 10rem 0;
-    // height: 100vh;
+    height: 100vh;
     
 }
 
@@ -13,6 +13,13 @@
     margin: 1rem 0rem;
     z-index: 3;
     // display: inline-block;
+}
+
+.project-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 
@@ -41,6 +48,7 @@ h2, h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 .project-demo-btn {
@@ -65,11 +73,47 @@ h2, h3 {
 
     &:hover {
         background: #91e4fb;
-        a {
-            color: rgb(72, 174, 218);
-        }
+        // a {
+        //     color: rgb(72, 174, 218);
+        // }
     }
 }   
+
+.accent-teal {
+    border: 2px solid #00a4d3;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+    }  
+
+    &:hover {
+        background: #00a4d3;
+        // a {
+        //     color: rgb(72, 174, 218);
+        // }
+    }
+} 
+
+.accent-purple {
+    border: 2px solid #8b51f5;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+    }  
+
+    &:hover {
+        background: #8b51f5;
+        // a {
+        //     color: rgb(72, 174, 218);
+        // }
+    }
+} 
+
+
 
 .tech-skill {
     font-weight: bold;

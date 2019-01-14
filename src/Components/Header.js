@@ -11,9 +11,9 @@ function Header() {
                     <p className="header-intro-tagline">I'm a consumer insights researcher turned Web Developer, UI Designer, and UX Enthusiast.  </p>
                     <hr className="line-horiz-header" />
                     <div className="contact-links">
-                        <i className="far fa-envelope"></i>
-                        <i className="fab fa-github"></i>
-                        <i className="fab fa-linkedin-in"></i>
+                        <a href="mailto:nroode@gmail.com"><i className="far fa-envelope"></i></a>
+                        <a href="https://github.com/nroode" target="_blank"><i className="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/natalie-roode-2b19628/" target="_blank"><i className="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
