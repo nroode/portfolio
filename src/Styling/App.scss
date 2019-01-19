@@ -5,6 +5,7 @@
 @import 'Variables.scss';
 
 
+
 .App {
   // margin: $outside-margin;
   // min-height: 100vh;
@@ -13,6 +14,7 @@
   color: white;
   box-sizing: border-box;
   font-family: $font-primary;
+  
   // font-weight: 700;
   font-size: 2rem;
   transition: all 1.5s ease;
@@ -41,20 +43,11 @@
     // }
 }
 
-// .bk-pink-gradient {
-//   opacity: 1;
-//   background: #ff9966;  
-//   background: -webkit-linear-gradient(to right, #ff5e62, #ff9966), 
-//               url(geo-pattern.png); 
-//   background: linear-gradient(to right, #ff5e62, #ff9966),
-//               url(geo-pattern.png);  
-// }
 
 .bk-green-gradient {
-  background: #c1d045;
-// background: #CF6E9C; 
-// background: -webkit-linear-gradient(#3c1053, #ad5389); 
-// background: linear-gradient(#3c1053, #ad5389); 
+// background: #303496;
+background: #92E6D8; 
+
 
 background-size: cover;
 position: relative;
@@ -62,10 +55,8 @@ position: relative;
 }
 
 .bk-purple-gradient {
-  background: #3b1d8f;
-// background: #CF6E9C; 
-// background: -webkit-linear-gradient(#3c1053, #ad5389); 
-// background: linear-gradient(#3c1053, #ad5389); 
+  // background: #ECE37C;
+  background: #303496;
 
 background-size: cover;
 position: relative;
@@ -73,38 +64,25 @@ position: relative;
 }
 
 .bk-blue-gradient {
-  
-  background: #4CB3D9; 
-  // background: #5B86E5;  
-  // background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  
-  // background: linear-gradient(to right, #5B86E5, #36D1DC); 
-
+  // background: rgb(22, 177, 151);
+  background: rgb(2, 141, 187);  
   background-size: cover;
   position: relative;
 
 }
 
 .bk-teal-gradient {
-  
-  
-  background: #136a8a; 
-  // background: -webkit-linear-gradient(to right, #267871, #136a8a);  
-  // background: linear-gradient(to right, #267871, #136a8a); 
-  
+  // background: #92E6D8; 
+  // background: rgb(2, 141, 187); 
+  background: rgb(22, 177, 151);
   background-size: cover;
   position: relative;
 
 }
 
 .bk-green2-gradient {
-  // background: $med-green;  
-  // background: -webkit-linear-gradient(to right, #aab63c, $med-green);  
-  // background: linear-gradient(to right, #aab63c, $med-green); 
-
   background: #79C9B0;
-  // background: #11998e;  
-  // background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  
-  // background: linear-gradient(to right, #38ef7d, #11998e); 
+
 
   background-size: cover;
   position: relative;

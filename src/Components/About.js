@@ -17,13 +17,15 @@ function About(listItems) {
                 <div className="about-section-detail">
                     <div className="about-story">
                         <p>
-                            I'm a front-end developer <i className="fas fa-laptop-code"></i> and UI designer <i className="fas fa-pencil-ruler"></i> based out of Los Angeles, California.
+                            I'm a <b>front-end developer</b> <i className="fas fa-laptop-code"></i> based out of Los Angeles, California, with a passion for <b>UI design</b> <i className="fas fa-pencil-ruler"></i> and optimizing user experience.  
 
-                            Before I built beautiful websites, I worked as a market researcher where I helped businesses understand their consumers' <i className="fas fa-users"></i> needs, analyzing data <i className ="far fa-chart-bar"></i> to advise on business decisions <i className="fas fa-money-bill"></i>.
+                            <p>Before I built beautiful websites, I worked in Market Research where I performed <b>data analysis</b> <i className ="far fa-chart-bar"></i>
+                            to help businesses <b>better understand their consumers' </b><i className="fas fa-users"></i> needs, 
+                            and advised on business decisions to help them increase their <b>bottom line</b> <i className="fas fa-hand-holding-usd"></i>.</p>
 
                             I take a UX-focused approach in my work, as I aim to create websites with intuitive user experinces <i className="far fa-smile-beam"></i> that drive call-to-action.
                             </p>
-                            <p>Scroll down to see some of my recent projects!</p>
+                            <p>Check out some of my recent projects!</p>
                     </div>
 
                     <div className="about-skills">

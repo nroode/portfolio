@@ -1,10 +1,78 @@
 .project-container {
     display: flex;
-    flex: 1 1 auto;
+    // flex: 1 1 auto;
     margin: 10rem 0;
-    height: 100vh;
+    // height: 100vh;
+    font-size: 85%;
+
     
 }
+
+@media (min-width: 501px) {
+    .project-container {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .project-container {
+      display: block;     
+
+      .project-section-right {
+        padding-left: 0rem;
+        display: block;
+        width: 100%;
+        
+        // flex-direction: column;
+        // justify-content: center;
+        
+        }
+
+        .project-section-left {
+        display: block;
+        width: 100%;
+        order: 2;
+         
+        }
+
+        .project-images {
+            display: block;
+            flex-direction: row;
+            justify-content: center;
+            height: 50%;
+            position: relative;
+            margin-bottom: 2rem;
+
+        }
+
+        .project-demo-btn {
+            width: 45%;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
+
+        .project-image {
+            // width: 80%;
+            margin: .5rem 0rem;
+            z-index: 3;
+            display: inline-block;
+
+            &-main {
+                z-index: 5;
+                
+                // position: absolute;
+                // right: 0rem;
+                // top: 5rem;
+            }
+
+            &-secondary {
+                z-index: 1;
+                display: none;
+            }
+        }
+    }
+ 
+  }
 
 .project-image {
     width: 100%;
@@ -22,10 +90,80 @@
     height: 100%;
 }
 
+.bg-project {
+    color: rgb(212, 243, 254);
 
-// .project-title {
-//     font-weight: 400;
-// }
+    h2, h3 {
+        color: #e6abac; 
+    }
+
+    button {
+        border: 2px solid #00ebfc;
+
+        a {
+            text-decoration: none;
+            color: rgb(212, 243, 254);
+            font-weight: 700;
+        }  
+    
+        &:hover {
+            background: #00ebfc;
+        }
+    }
+
+    .divider {
+        color: rgb(19, 171, 221);  
+    }
+}
+
+.dragon-project {
+    color: #a2a5fa;
+    h2, h3 {
+        color: rgb(248, 240, 145);
+    }
+    button {
+        border: 2px solid #454bfa;
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+        }  
+    
+        &:hover {
+            background: #454bfa;
+        }
+    }
+
+    .divider {
+        color: #585de9; 
+    }
+}
+
+.prod-project {
+    color: rgb(189, 250, 240); 
+
+    h2, h3 {
+        color: #fcb693;
+    }
+
+    button {
+        border: 2px solid rgb(0, 255, 213); 
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+        }  
+    
+        &:hover {
+            background: rgb(0, 255, 213); 
+        }
+    }
+
+    .divider {
+        color: rgb(44, 215, 186); 
+    }
+}
 
 h2, h3 {
     padding: 0;
@@ -34,7 +172,7 @@ h2, h3 {
 
 .project-section-left, .project-section-right {
     display: inline-block;
-    width: 50%;
+    width: 50%;   
      
 }
 
@@ -48,7 +186,6 @@ h2, h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 .project-demo-btn {
@@ -59,61 +196,9 @@ h2, h3 {
     font-size: 1.5rem;
     font-family: $font-primary;
     margin-right: 1rem;
-    
+    transition: .35s all ease;
 }
-
-.accent-blue {
-    border: 2px solid #91e4fb;
-
-    a {
-        text-decoration: none;
-        color: white;
-        font-weight: 700;
-    }  
-
-    &:hover {
-        background: #91e4fb;
-        // a {
-        //     color: rgb(72, 174, 218);
-        // }
-    }
-}   
-
-.accent-teal {
-    border: 2px solid #00a4d3;
-
-    a {
-        text-decoration: none;
-        color: white;
-        font-weight: 700;
-    }  
-
-    &:hover {
-        background: #00a4d3;
-        // a {
-        //     color: rgb(72, 174, 218);
-        // }
-    }
-} 
-
-.accent-purple {
-    border: 2px solid #8b51f5;
-
-    a {
-        text-decoration: none;
-        color: white;
-        font-weight: 700;
-    }  
-
-    &:hover {
-        background: #8b51f5;
-        // a {
-        //     color: rgb(72, 174, 218);
-        // }
-    }
-} 
-
-
+ 
 
 .tech-skill {
     font-weight: bold;

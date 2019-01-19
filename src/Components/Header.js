@@ -8,7 +8,7 @@ function Header() {
             <div className="header-description-container">
                 <div className="header-description">
                     <h1 className="header-intro">Hi, I'm Natalie Roode </h1>
-                    <p className="header-intro-tagline">I'm a consumer insights researcher turned Web Developer, UI Designer, and UX Enthusiast.  </p>
+                    <p className="header-intro-tagline">I'm a Market Researcher turned Web Developer and UX Enthusiast with a passion for Design.  </p>
                     <hr className="line-horiz-header" />
                     <div className="contact-links">
                         <a href="mailto:nroode@gmail.com"><i className="far fa-envelope"></i></a>

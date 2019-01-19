@@ -16,30 +16,32 @@ let featuredProjects = [
         title: 'Better Groceries',
         role: 'Developer',
         affiliation: "Philosophie Group Inc. - Product for Good",
-        subTitle: 'the vegan food finder',
+        subTitle: '[ the vegan food finder ]',
         tech: ['React.js', 'Styled Components', 'Unstated', 'PostgreSQL',],
-        description: 'Developed for Better Eating International.  This app helps transitioning vegans, through education on vegan alternatives and makes shopping for vegan products easier by identifying products available at local stores.  Web app includes a public view for product searches and an admin view where administrators can add new products to the database.',
+        description: 'Developed for Better Eating International, the Better Groceries app was created to help transitioning vegans.  This app serves as a source of education on vegan alternatives and makes shopping for vegan products easier by connecting users with product locators.  Web app includes a public view for product searches and an admin view where administrators can add new products to the database or update current product information.',
         github: false,
         githubLink: '',
         liveDemo: 'https://staging--better-groceries.netlify.com/',
         image: BetterGroceriesPublic,
         imageSecondary: BetterGroceriesAdmin,
         colorSecondary: 'project-demo-btn accent-blue',
+        projClass: "bg-project",
 
     },
     {
         title: 'Dragon',
         role: 'Developer + PM',
         affiliation: "Chingu Developer Network",
-        subTitle: 'a Trello clone',
+        subTitle: '[ a Trello clone ]',
         tech: ['React.js', 'SCSS'],
-        description: 'This is a clone of the popular Trello app.  Users can create lists, cards and drag and drop these items.  They have the ability to customize the look of the board by selecting an alternate background.  Members can also be added to the board.',
+        description: 'This is a clone of the popular project management app Trello.  Users can create cards for their tasks and organize these into customizable lists.  Cards can be dragged and dropped into different positions and lists based on progress.  Users also have the ability to customize the look of the board by selecting an alternate background.  Members can also be added to the board.',
         github: true,
         githubLink: 'https://github.com/chingu-voyage7/Geckos-Team-14',
         liveDemo: 'https://chingu-voyage7.github.io/Geckos-Team-14/',
         image: Dragon,
         imageSecondary: Dragon2,
         colorSecondary: 'project-demo-btn accent-purple',
+        projClass: "dragon-project",
 
     },
     {
@@ -55,6 +57,7 @@ let featuredProjects = [
         image: ChinguProd1,
         imageSecondary: ChinguProd2,
         colorSecondary: 'project-demo-btn accent-teal',
+        projClass: "prod-project",
 
     },
 
@@ -63,7 +66,7 @@ let featuredProjects = [
 
 function Projects() {
     return (
-        <div className="projects-container">
+        <div className="projects-container" >
             <div className="projects-section">
                 <h1 className="projects-section-title">Projects</h1>
                 <hr className="line-horiz-projects" />
@@ -71,10 +74,11 @@ function Projects() {
                 {featuredProjects.map((project, i)=> 
                     <Project
                     featuredProjects={{...featuredProjects[i]}}
+                    name="section-projects"
                      />
                 )}
                 </div>
-                <p>For more projects, check out my gitHub</p>
+                <p>For more projects, check out my <a href="https://github.com/nroode" className="github-link">gitHub</a></p>
             </div>
         </div>
     )

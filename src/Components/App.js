@@ -90,9 +90,9 @@ class App extends Component {
           <div className="App-gradient"></div>
           <div className={this.state.colorClass}>
 
-            <Header id="section-header" />
-            <About />
-            <Projects id="section-projects" />
+            <Header name="section-header" />
+            <About name="section-about" />
+            <Projects  />
 
           </div>
         </div>
