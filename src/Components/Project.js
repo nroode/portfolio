@@ -8,7 +8,9 @@ export default class Project extends Component {
     render() {
         return (
             <div className={"project-container " + this.props.featuredProjects.projClass}>
+
                 <div className="project-section-left">
+
                     <div className="project-images">
                         <img src={this.props.featuredProjects.image} className="project-image project-image-main"></img>
                         <img src={this.props.featuredProjects.imageSecondary} className="project-image project-image-secondary"></img>
@@ -16,7 +18,6 @@ export default class Project extends Component {
                 </div>
                 <div className="project-section-right">
                     <div>
-
                         <h2 className="project-title">{this.props.featuredProjects.title}</h2>
                         <h3 className="project-subtitle">{this.props.featuredProjects.subTitle}</h3>
                         <p className="project-role"><b>Role:  </b>{this.props.featuredProjects.role}</p>
@@ -42,3 +43,5 @@ export default class Project extends Component {
 }
 
 // export default Project;
+// <div><i className="fas fa-asterisk project-asterisk"></i></div>
+

@@ -24,7 +24,6 @@ let featuredProjects = [
         liveDemo: 'https://staging--better-groceries.netlify.com/',
         image: BetterGroceriesPublic,
         imageSecondary: BetterGroceriesAdmin,
-        colorSecondary: 'project-demo-btn accent-blue',
         projClass: "bg-project",
 
     },
@@ -33,22 +32,21 @@ let featuredProjects = [
         role: 'Developer + PM',
         affiliation: "Chingu Developer Network",
         subTitle: '[ a Trello clone ]',
-        tech: ['React.js', 'SCSS'],
+        tech: ['React.js', 'SCSS', 'Flexbox'],
         description: 'This is a clone of the popular project management app Trello.  Users can create cards for their tasks and organize these into customizable lists.  Cards can be dragged and dropped into different positions and lists based on progress.  Users also have the ability to customize the look of the board by selecting an alternate background.  Members can also be added to the board.',
         github: true,
         githubLink: 'https://github.com/chingu-voyage7/Geckos-Team-14',
         liveDemo: 'https://chingu-voyage7.github.io/Geckos-Team-14/',
         image: Dragon,
         imageSecondary: Dragon2,
-        colorSecondary: 'project-demo-btn accent-purple',
         projClass: "dragon-project",
 
     },
     {
-        title: 'Productivity App',
+        title: 'Personal Dashboard',
         role: 'Designer + Developer + PM',
         affiliation: "Chingu Developer Network",
-        subTitle: '',
+        subTitle: '[ a productivity app ]',
         tech: ['HTML', 'CSS', 'Vanilla JavaScript',],
         description: 'This productivity app is a go-to source for daily weather and top news stories.  Keep track of tasks in the to-do list and enjoy some classical music while working.  The app also displays the current date and time and each time the app is opened, a beautiful new image is displayed (courtesy of Unsplash).',
         github: true,
@@ -56,7 +54,6 @@ let featuredProjects = [
         liveDemo: 'https://chingu-voyage5.github.io/Geckos-Team-15/',
         image: ChinguProd1,
         imageSecondary: ChinguProd2,
-        colorSecondary: 'project-demo-btn accent-teal',
         projClass: "prod-project",
 
     },
@@ -66,7 +63,7 @@ let featuredProjects = [
 
 function Projects() {
     return (
-        <div className="projects-container" >
+        <div className="projects-container" id="section-projects" >
             <div className="projects-section">
                 <h1 className="projects-section-title">Projects</h1>
                 <hr className="line-horiz-projects" />
@@ -78,7 +75,7 @@ function Projects() {
                      />
                 )}
                 </div>
-                <p>For more projects, check out my <a href="https://github.com/nroode" className="github-link">gitHub</a></p>
+                <p>To see more of my work, check out my <a href="https://github.com/nroode" className="github-link">gitHub</a></p>
             </div>
         </div>
     )
