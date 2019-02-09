@@ -1,4 +1,5 @@
 @import 'About.scss';
+@import 'Contact.scss';
 @import 'Header.scss';
 @import 'Project.scss';
 @import 'Projects.scss';
@@ -14,15 +15,24 @@
   color: white;
   box-sizing: border-box;
   font-family: $font-primary;
+  // width: 100%;
   
   // font-weight: 700;
   font-size: 2rem;
-  transition: all 1.5s ease;
-  -webkit-transition:  all 1.5s ease;
-  -ms-transition: all 1.5s ease;
+  transition: all 1s ease;
+  -webkit-transition:  all 1s ease;
+  -ms-transition: all 1s ease;
+  background-blend-mode: darken;
+  
+  // background: #ff5e62; 
+    //             url(workStation.jpg);
+
+    //             background: linear-gradient(to right, #ff5e62, #ff9966),
+    //             url(abstract.jpg);  
+    // background-size: cover;
+    // background-blend-mode: multiply; 
+                
     
-  // background: #f87162;
-    background: #ff5e62; 
     // background: -webkit-linear-gradient(#ff5e62, #ff9966), 
     //             url(geo-pattern.png); 
     // background: linear-gradient(#ff5e62, #ff9966),
@@ -45,8 +55,8 @@
 
 
 .bk-green-gradient {
-// background: #303496;
-background: #92E6D8; 
+  background: #303496;
+// background: #dadbfc;
 
 
 background-size: cover;
@@ -56,16 +66,19 @@ position: relative;
 
 .bk-purple-gradient {
   // background: #ECE37C;
-  background: #303496;
-
+  // background: #303496;
+  background: #175bbf;
+  
 background-size: cover;
 position: relative;
 
 }
 
 .bk-blue-gradient {
-  // background: rgb(22, 177, 151);
-  background: rgb(2, 141, 187);  
+  background: #35accf;
+  // background: rgb(0, 173, 189); 
+  // background: #303496;
+  
   background-size: cover;
   position: relative;
 
@@ -74,14 +87,15 @@ position: relative;
 .bk-teal-gradient {
   // background: #92E6D8; 
   // background: rgb(2, 141, 187); 
-  background: rgb(22, 177, 151);
+  background: #3684a4;
+  
   background-size: cover;
   position: relative;
 
 }
 
 .bk-green2-gradient {
-  background: #79C9B0;
+  background: #92E6D8; 
 
 
   background-size: cover;

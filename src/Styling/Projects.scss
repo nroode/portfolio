@@ -1,8 +1,22 @@
+
+
 .projects-container {
+    background: #36D1DC;  
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);
+    background: linear-gradient(to right, #5B86E5, #36D1DC);
+    // url(abstract3.jpg);
+    
+     
+
     // background: #36D1DC;  
-    // background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  
-    // background: linear-gradient(to right, #5B86E5, #36D1DC); 
-    // min-height: 100vh;
+    // background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC),
+    // url(water.jpg);   
+    // background: linear-gradient(to right, #5B86E5, #36D1DC),
+    // url(water.jpg);  
+
+    min-height: 100vh;
+    background-size: cover;
+    background-blend-mode: overlay;
 }
 
 .projects-section {
@@ -11,44 +25,21 @@
 
     &-title {
         font-family: $font-secondary;
-        font-size: 5rem;
+        font-size: 9rem;
         padding: 0;
         margin: 0;
+        font-weight: 400;
+        // text-transform: uppercase;
+        color: rgb(63, 99, 177);
     }
 }
 
-
-
-
-@media (max-width: 500px) {
-    .projects-section {
-        margin: 0 5rem;
-        padding: 5rem 0;
-
-    }
-
-    .projects-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .project-section-left, .project-section-right {
-        width: 100%;
-    }
-
-    // .project-section-right {
-    //     margin-bottom: 10rem;
-    // }
-
-        
-}
 
 .line-horiz-projects {
     max-width: 10rem;
     display: block;
     margin-left: 0;
-    background-color: $light-blue;
+    background-color: rgb(60, 206, 255);
     border: none;
     height: 3px;
     border-radius: 1rem;
@@ -58,5 +49,33 @@ a.github-link {
     font-weight: bold;
     color: white;
     text-decoration: none;
-    border-bottom: 2px solid #00a4d3;
+    border-bottom: 2px solid #fec9ae;
+}
+
+@media (max-width: 500px) {
+    .projects-section {
+        margin: 0;
+        padding: 2.5rem;
+
+        &-title {
+            font-size: 5rem;
+        }
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        .bg-project, .dragon-project, .prod-project {
+            padding: 0rem;
+        }
+    }
+
+    .project-section-left, .project-section-right {
+        width: 100%;
+    }
+    // .project-section-right {
+    //     margin-bottom: 10rem;
+    // }      
 }

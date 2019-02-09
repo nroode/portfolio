@@ -1,7 +1,7 @@
 import React from 'react';
 
-let techSkills = ['HTML', 'CSS', 'SASS/SCSS', 'JavaScript', 'React', 'APIs', 'Photoshop'];
-const addtlSkills = ['JIRA', 'Bitbucket', 'Basecamp', 'Project Management', 'Data-Driven Analysis', 'Google Analytics']
+let techSkills = ['HTML', 'CSS', 'SASS/SCSS', 'JavaScript', 'JQuery', 'React', 'APIs', 'npm'];
+const addtlSkills = ['JIRA', 'Bitbucket', 'Basecamp', 'Project Management', 'Photoshop', 'Data-Driven Analysis', 'Google Analytics']
 
 
 
@@ -12,44 +12,46 @@ function About(listItems) {
     return (
         <div className="about-container" id="section-about">
             <div className="about-section">
-                <h1 className="about-section-title">About</h1>
-                <hr className="line-horiz-about" />
+
                 <div className="about-section-detail">
                     <div className="about-story">
+                        <h1 className="about-section-title">About</h1>
                         <p>
-                            I'm a <b>front-end developer</b> <i className="fas fa-laptop-code"></i> based out of Los Angeles, California, with a passion for <b>UI design</b> <i className="fas fa-pencil-ruler"></i> and optimizing user experience.  
+                            <b>I'm a front-end developer, UX enthusiast, creative, detail-oriented, analytical thinker, problem-solver, life-long learner, and cat <i className="fas fa-cat"></i> lover — who likes to make things look good.</b>
 
-                            <p>Before I built beautiful websites, I worked in Market Research where I performed <b>data analysis</b> <i className ="far fa-chart-bar"></i>
-                            to help businesses <b>better understand their consumers' </b><i className="fas fa-users"></i> needs, 
-                            and advised on business decisions to help them increase their <b>bottom line</b> <i className="fas fa-hand-holding-usd"></i>.</p>
+                            <p>Before I built beautiful websites, I worked in Market Research where I performed <b>data analysis </b>
+                                to help businesses <b>better understand their consumers' </b> needs,
+                            and advised on business decisions to help them increase their <b>bottom line</b>.</p>
 
-                            I take a UX-focused approach in my work, as I aim to create websites with intuitive user experinces <i className="far fa-smile-beam"></i> that drive call-to-action.
+                            As a developer, I get to combine my love for understanding users and love for building, creating, and solving problems with code.
                             </p>
-                            <p>Check out some of my recent projects!</p>
+                        <p>Check out some of <a href="#section-projects">my recent projects!</a></p>
                     </div>
-
-                    <div className="about-skills">
-                        <div className="about-skills-set">
-                            <i className="fas fa-code"></i>
-                            <h2 className="about-skills-title">Technology</h2>
-                            
-                            <ul className="about-skills-list">
-                                {techSkills.map((skill) => <li className="about-skill">{skill}<span className="divider divider-about">|</span></li>)}
-                            </ul>
-                        </div>
-                        <div className="about-skills-set">
-                            <i class="fas fa-cogs"></i>
-                            <h2 className="about-skills-title">Skills</h2>
-                            
-                            <ul className="about-skills-list">
-                                {addtlSkills.map((skill) => <li className="about-skill">{skill}<span className="divider divider-about">|</span></li>)}
-                            </ul>
-                        </div>
-                    </div>
-
                 </div>
 
             </div>
+            <div className="about-skills">
+                <div className="about-skills-set">
+
+                    <h2 className="about-skills-title">[ technology ]</h2>
+
+                    <ul className="about-skills-list">
+                        {techSkills.map((skill) => <li className="about-skill">{skill}<span className="divider divider-about">|</span></li>)}
+                    </ul>
+                </div>
+                <div className="about-skills-set">
+
+                    <h2 className="about-skills-title">[ skills ]</h2>
+
+                    <ul className="about-skills-list">
+                        {addtlSkills.map((skill) => <li className="about-skill">{skill}<span className="divider divider-about">|</span></li>)}
+                    </ul>
+                </div>
+            </div>
+
+
+
+
         </div>
     )
 
@@ -70,3 +72,7 @@ export default About;
 //         </div>
 //     </div>
 // )}
+
+// <i className="fas fa-asterisk about-asterisk"></i>
+
+// <hr className="line-horiz-about" />
