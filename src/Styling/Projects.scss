@@ -1,27 +1,25 @@
 
 
 .projects-container {
-    background: #36D1DC;  
-    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);
-    background: linear-gradient(to right, #5B86E5, #36D1DC);
-    // url(abstract3.jpg);
-    
-     
-
-    // background: #36D1DC;  
-    // background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC),
-    // url(water.jpg);   
-    // background: linear-gradient(to right, #5B86E5, #36D1DC),
-    // url(water.jpg);  
 
     min-height: 100vh;
     background-size: cover;
     background-blend-mode: overlay;
+    
+
+    background: white;  
+    background: linear-gradient(to right, #fc6b63, #ffa382);
+    background: linear-gradient(to right, #fc6b63, #ffa382),
+    url('triangles.png');
+    
 }
 
 .projects-section {
     margin: 0 $inside-margin;
     padding: 10rem 0;
+    
+
+    
 
     &-title {
         font-family: $font-secondary;
@@ -29,27 +27,36 @@
         padding: 0;
         margin: 0;
         font-weight: 400;
+        color: black;
+        display: inline-block;
         // text-transform: uppercase;
-        color: rgb(63, 99, 177);
+        
+    }
+
+    .addtl-projects {
+        text-align: center;
+        font-family: $font-secondary;
+        font-size: 3rem;
     }
 }
 
 
 .line-horiz-projects {
-    max-width: 10rem;
-    display: block;
-    margin-left: 0;
-    background-color: rgb(60, 206, 255);
+    width: 20rem;
+    display: inline-block;
+    // margin-left: 2rem;
+    background-color: black;
     border: none;
-    height: 3px;
-    border-radius: 1rem;
+    height: 5px;
+    margin: 3rem 0rem 3rem 2rem;
+
 }
 
 a.github-link {
     font-weight: bold;
-    color: white;
+    color: black;
     text-decoration: none;
-    border-bottom: 2px solid #fec9ae;
+    border-bottom: 2px solid #fda97f;
 }
 
 @media (max-width: 500px) {

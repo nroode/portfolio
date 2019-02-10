@@ -17,7 +17,7 @@ function About(listItems) {
                     <div className="about-story">
                         <h1 className="about-section-title">About</h1>
                         <p>
-                            <b>I'm a front-end developer, UX enthusiast, creative, detail-oriented, analytical thinker, problem-solver, life-long learner, and cat <i className="fas fa-cat"></i> lover — who likes to make things look good.</b>
+                            <b>I'm a creative, detail-oriented front-end developer, UX enthusiast, analytical thinker, problem-solver, life-long learner, and cat <i className="fas fa-cat"></i> lover — who likes to make things look good.</b>
 
                             <p>Before I built beautiful websites, I worked in Market Research where I performed <b>data analysis </b>
                                 to help businesses <b>better understand their consumers' </b> needs,

@@ -6,7 +6,7 @@ function Contact() {
             <div className="projects-section">
                 <div>
                     <div className="contact-section-action">
-                        <p>Get in touch with me!</p>
+                        <p>Need help with a project? Get in touch with me!</p>
                     </div>
                     <div className="contact-section-links">
                         <a href="mailto:nroode@gmail.com"><i className="fas fa-envelope"></i>nroode@gmail.com</a>

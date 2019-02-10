@@ -8,7 +8,10 @@ export default class Project extends Component {
     render() {
         return (
             <div className={"project-container " + this.props.featuredProjects.projClass}>
-
+                <div className="project-number-outline">
+                   <p className="project-number">{this.props.number}<span className="project-number-total">/3</span></p>
+                   
+                </div>
                 <div className="project-section-left">
 
                     <div className="project-images">

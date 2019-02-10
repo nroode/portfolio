@@ -4,11 +4,12 @@
 
 .header-container {
     
-    // background: #fc6b63;  
-    // background: linear-gradient(to right, #fc6b63, #ffa382);
-    // background: linear-gradient(to right, #fc6b63ec, #ffa382de);
+    background: white;  
+    background: linear-gradient(to right, #fc6b63, #ffa382);
+    background: linear-gradient(to right, #fc6b63, #ffa382),
+    url('worn_dots.png');
     
-    // background-blend-mode: luminosity;
+    background-blend-mode: overlay;
 
     // background: url('deco2.png');
 
@@ -19,13 +20,11 @@
     
     display: flex;
     flex-direction: column;
-     
-    
 }
 
-.name {
-    // color: #d6514a;
-}
+// .name {
+//     color: #d6514a;
+// }
 
 .header-description {
     
@@ -79,6 +78,11 @@
     color: $med-pink;
     text-transform: uppercase;
 
+    background: linear-gradient(to bottom, #fc6b63, #E23949);
+    background: -webkit-linear-gradient(to bottom, #fc6b63, #E23949);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     &-tagline {
         color: $med-pink;
         font-size: 4rem;
@@ -89,27 +93,30 @@
     }
 }
 
-// .line-horiz-header {
-    
-//     max-width: 10rem;
-//     display: block;
-//     margin-left: 0;
-//     background-color: $light-orange;
-//     border: none;
-//     height: 3px;
-//     border-radius: 1rem;
-// }
-
 .fa-envelope, .fa-github, .fa-linkedin-in {
-    font-size: 3rem;
-    padding: 1rem;
+    font-size: 1.5rem;
+    padding: .5rem;
+    margin: .75rem;
+    background-color: black;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100rem;
     // color: #ffefee;
     
 }
 
-// .contact-links a {
-//     color: white;
-// }
+.contact-links {
+    position: absolute;
+    // top: 40vh;
+    left: .5rem;
+    top: .5rem;
+    text-align: center;
+
+    a {
+        color: white;
+        display: block;
+    }
+}
 
 
 @media (max-width: 500px) {

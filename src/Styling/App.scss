@@ -12,13 +12,14 @@
   // min-height: 100vh;
   display: flex;
   flex-direction: column;
-  color: white;
+  
   box-sizing: border-box;
   font-family: $font-primary;
+  
   // width: 100%;
   
-  // font-weight: 700;
-  font-size: 2rem;
+  font-weight: 300;
+  font-size: 1.6rem;
   transition: all 1s ease;
   -webkit-transition:  all 1s ease;
   -ms-transition: all 1s ease;
