@@ -9,24 +9,12 @@
     position: relative;
     // background-color: rgba(0, 0, 0, 0.057);
     padding: 5rem;
+    border: .5rem solid black;
+    background-color: white;
+}
 
-    background-color: rgba(56, 108, 218, 0.445); 
-    box-shadow: 1px 1px 10px rgb(44, 70, 124);
-    // box-shadow: 1px 1px 5px rgba(35, 43, 79, 0.214);
-    // .project-asterisk {
-    //     font-size: 15rem;
-    //     opacity: .2;
-    //     background-color: rgba(0, 0, 0, 0.057);
-    //     text-align: center;
-    //     line-height: 14rem;
-    //     height: 14rem;
-    //     width: 14rem;
-    //     border-radius: 100rem;
-    //     z-index: 5;
-    //     position: absolute;
-    //     right: -3rem;
-    //     top: 10rem;
-    // }
+.project-description {
+    line-height: 1.4;
 }
 
 // @media (min-width: 501px) {
@@ -38,7 +26,7 @@
 
 
 .project-image {
-    width: 100%;
+    width: 90%;
     border: 10px solid rgba(255, 255, 255, 0.167);
     margin: 1rem 0rem;
     z-index: 3;
@@ -63,60 +51,70 @@
 }
 
 .bg-project, .dragon-project, .prod-project {
-    color: rgb(215, 245, 250);
+    color: $dark-grey;
     h2, h3 {
-        color: #fec9ae;
+        color: $med-pink;
     }
 
     button {
-        border: 2px solid rgb(60, 206, 255); 
+        border: 2px solid $med-pink; 
         a {
             text-decoration: none;
-            color: rgb(229, 245, 250);
+            color: $med-pink;
             font-weight: 700;
+            
         }  
         &:hover {
-            background: rgb(60, 206, 255); 
+            background: $med-pink;  
+            
+            a {
+                color: white;
+            }
+            // background: linear-gradient(to right, #fc6b63, #ffa382);
+            // background: linear-gradient(to right, #fc6b63, #ffa382);
         }
     }
 
     .divider {
-        color: rgb(60, 206, 255);  
+        color: #fec9ae;  
     }
 
     .project-role b, .project-context b{
         font-family: $font-secondary;
-        // font-weight: 400;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-right: .5rem;
     }
 
 }
 
+.bg-project, .prod-project {
+    margin-left: 15rem;
+
+    .project-number-outline {
+        // position: absolute;
+            left: -10rem;
+    }
+}
+
 .dragon-project {
+    margin-right: 15rem;
     .project-section-left{
         order: 2;
     } 
 
     .project-section-right {
         order: 1;
-        padding-right: 7rem;
+
+        padding-right: 5rem;
         padding-left: 0rem;
     }
 
-    // .project-image {
-    //     &-main {
-    //         background: #fc6b63;
-    //         background: linear-gradient(to right, #fc6b63d0, #ffa382),
-    //         url(./ProjectImages/Dragon.png);
-    //         height: 100%;
-    //         background-blend-mode: multiply;
-    //         background-size: cover;
-    //     }
-
-    //     &-secondary {
-    //         background: #fc6b63,
-    //         url(/ProjectImages/dragon.png);
-    //     }
-    // }
+    .project-number {
+        &-outline{
+        right: -10rem;
+        }
+    }
 
 }
 
@@ -139,16 +137,19 @@ h2 {
 
 .project-section-left {
     position: relative;
-    width: 40%;
+    width: 50%;
 }
 
 
 .project-section-right {
-    padding: 0rem 0rem 0rem 7rem;
+    // padding: 0rem 5rem;
+    padding-left: 5rem;
+    padding-right: 0rem;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
+    width: 50%;
 }
 
 .project-demo-btn {
@@ -160,6 +161,36 @@ h2 {
     font-family: $font-primary;
     margin-right: 1rem;
     transition: .35s all ease;
+}
+
+.project-number {
+    transform: rotate(-45deg);
+    font-size: 7rem;
+    
+    font-family: $font-secondary;
+    position: absolute;
+    top:-5rem;
+    left: 2rem;
+
+    &-outline {
+        height: 13rem;
+        width: 13rem;
+        z-index: 5;
+        border: 5px solid black;
+        background-color: white;
+        position: absolute;
+        top: 10rem;
+        transform: rotate(45deg);
+        // text-align: center;
+
+    }
+
+    &-total {
+        font-size: 3rem;
+        display: block;
+    }
+    
+
 }
 
 

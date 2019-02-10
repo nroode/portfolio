@@ -66,16 +66,17 @@ function Projects() {
         <div className="projects-container" id="section-projects" >
             <div className="projects-section">
                 <h1 className="projects-section-title">Projects</h1>
-                <hr className="line-horiz-projects" />
+                <hr className="line-horiz-projects"></hr>
                 <div>
                 {featuredProjects.map((project, i)=> 
                     <Project
                     featuredProjects={{...featuredProjects[i]}}
+                    number={(i+1)}
                     name="section-projects"
                      />
                 )}
                 </div>
-                <p>To see more of my work, check out my <a href="https://github.com/nroode" className="github-link">gitHub</a></p>
+                <p className="addtl-projects">To see more of my work, check out my <a href="https://github.com/nroode" className="github-link">gitHub</a></p>
             </div>
         </div>
     )
@@ -96,3 +97,5 @@ export default Projects;
                     // image={featuredProjects[i].image}
                     // colorSecondary={featuredProjects[i].colorSecondary}
                     // imageSecondary={featuredProjects[i].imageSecondary}
+
+// <hr className="line-horiz-projects" />
