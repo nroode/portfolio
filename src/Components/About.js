@@ -19,9 +19,9 @@ function About(listItems) {
                         <p>
                             <b>I'm a creative, detail-oriented front-end developer, UX enthusiast, analytical thinker, problem-solver, life-long learner, and cat <i className="fas fa-cat"></i> lover — who likes to make things look good.</b>
 
-                            <p>Before I built beautiful websites, I worked in Market Research where I performed <b>data analysis </b>
-                                to help businesses <b>better understand their consumers' </b> needs,
-                            and advised on business decisions to help them increase their <b>bottom line</b>.</p>
+                            <p>Before I built beautiful websites, I worked in Market Research where I performed data analysis 
+                                to help businesses better understand their consumers' needs,
+                            and advised on business decisions to help them increase their bottom line.</p>
 
                             As a developer, I get to combine my love for understanding users and love for building, creating, and solving problems with code.
                             </p>
@@ -36,7 +36,7 @@ function About(listItems) {
                     <h2 className="about-skills-title">[ technology ]</h2>
 
                     <ul className="about-skills-list">
-                        {techSkills.map((skill) => <li className="about-skill">{skill}<span className="divider divider-about">|</span></li>)}
+                        {techSkills.map((skill) => <li className="about-skill">{skill}<span className="divider divider-about">/</span></li>)}
                     </ul>
                 </div>
                 <div className="about-skills-set">
@@ -44,7 +44,7 @@ function About(listItems) {
                     <h2 className="about-skills-title">[ skills ]</h2>
 
                     <ul className="about-skills-list">
-                        {addtlSkills.map((skill) => <li className="about-skill">{skill}<span className="divider divider-about">|</span></li>)}
+                        {addtlSkills.map((skill) => <li className="about-skill">{skill}<span className="divider divider-about">/</span></li>)}
                     </ul>
                 </div>
             </div>

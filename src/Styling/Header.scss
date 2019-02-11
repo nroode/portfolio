@@ -75,9 +75,9 @@
     padding: 0;
     margin: 0;
     font-weight: 700;
-    color: $med-pink;
+    
     text-transform: uppercase;
-
+    color: $med-pink;
     background: linear-gradient(to bottom, #fc6b63, #E23949);
     background: -webkit-linear-gradient(to bottom, #fc6b63, #E23949);
     -webkit-background-clip: text;
@@ -120,18 +120,72 @@
 
 
 @media (max-width: 500px) {
+
+    .contact-links {
+        right: .5rem;
+        top: .5rem;
+        a {
+            display: inline-block;
+        }
+    }
+
     .header-description-container {
-        margin: 0 5rem;
-        padding: 5rem 0;
+        padding: 0;
 
         .header-intro {
-            font-size: 3.5rem;
+            font-size: 3rem;
     
             &-tagline {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
         }
     
+    }
+
+    .header-description {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 3rem 0;
+
+        &-container {
+            margin: 10rem 2rem;
+            text-align: center;
+            border: 3px solid black;
+        }
+        &-links {
+            width: 90%;
+            margin-top: 7rem;
+            margin-bottom: 5rem;
+            // margin-bottom: 5rem;
+            
+        }
+    }
+
+    .header-container {
+        min-height: 50vh;
+    }
+
+    .header-hello{
+        font-size: 4rem;
+        top: -2.5rem;
+        left: 5rem;
+    }
+    
+
+    .nav-section {
+        &-links {
+            margin-right: 0;
+            box-sizing: border-box;
+            padding: 0;
+
+            .nav-section a {
+                font-size: 80%;
+            }
+            .header-divider, .nav-section {
+                font-size: 1.5rem;
+                padding: .3rem;
+            }
+        }
     }
 
 }
