@@ -4,10 +4,7 @@
     display: flex;
     // flex: 1 1 auto;
     margin: 10rem 0;
-    
-    // height: 100vh;
     position: relative;
-    // background-color: rgba(0, 0, 0, 0.057);
     padding: 5rem;
     border: .5rem solid black;
     background-color: white;
@@ -17,25 +14,17 @@
     line-height: 1.4;
 }
 
-// @media (min-width: 501px) {
-//     .project-container {
-//         height: 100vh;
-//     }
-// }
-
-
-
 .project-image {
     width: 90%;
     border: 10px solid rgba(255, 255, 255, 0.167);
     margin: 1rem 0rem;
     z-index: 3;
     position:relative; 
-    filter: opacity(.9) grayscale(70%);
+    filter: opacity(.9) grayscale(100%);
     // filter: invert(0.2) grayscale(80%) hue-rotate(330deg) brightness(1.2);
     // -webkit-filter: invert(0.2) hue-rotate(330deg) brightness(1.2) grayscale(80%);
     // display: inline-block
-    transition: 1s all ease;
+    transition: .5s all ease;
 
     &:hover {
         filter: none; 
@@ -93,7 +82,7 @@
 
     .project-number-outline {
         // position: absolute;
-            left: -10rem;
+            left: -13rem;
     }
 }
 
@@ -111,8 +100,10 @@
     }
 
     .project-number {
+
         &-outline{
-        right: -10rem;
+            position: absolute;
+            right: -13rem;
         }
     }
 
@@ -164,38 +155,28 @@ h2 {
 }
 
 .project-number {
-    transform: rotate(-45deg);
-    font-size: 7rem;
-    
+    font-size: 25rem;
     font-family: $font-secondary;
-    position: absolute;
-    top:-5rem;
-    left: 2rem;
+    margin: 0;
+    color: $med-pink;
+    // background: linear-gradient(to bottom, #fc6b63, rgb(255, 57, 77));
+    // background: -webkit-linear-gradient(to bottom, #fc6b63, rgb(255, 57, 77));
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
 
     &-outline {
-        height: 13rem;
-        width: 13rem;
         z-index: 5;
-        border: 5px solid black;
-        background-color: white;
         position: absolute;
-        top: 10rem;
-        transform: rotate(45deg);
-        // text-align: center;
-
+        top: -5rem;
     }
-
-    &-total {
-        font-size: 3rem;
-        display: block;
-    }
-    
 
 }
 
 
 .tech-skill {
-    font-weight: bold;
+    // font-weight: 700;
+    font-size: 2rem;
+    font-family: $font-secondary;
 }
 
 .divider {
@@ -216,8 +197,8 @@ h2 {
     .project-container {
       display: block;  
       font-size: 80%;  
-      padding: 1rem;
-      background-color: rgba(0, 0, 0, 0);
+      margin: 2rem 0;
+      border: 1px solid black;
 
       .project-section-right {
         padding-left: 0rem;
@@ -251,11 +232,15 @@ h2 {
             margin-right: 1rem;
         }
 
+        .project-number {
+            display: none;
+        }
+
         .project-image {
             // width: 80%;
-            margin: .5rem 0rem;
+            margin: .5rem auto;
             z-index: 3;
-            display: inline-block;
+            display: block;
             border: 0px;
 
             &-main {

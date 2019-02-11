@@ -23,11 +23,6 @@
     margin: 0;
     font-weight: 400;
     // text-transform: uppercase;
-    i {
-        font-size: 6rem;
-        padding: 1rem;
-        line-height: 9rem;
-    }
 }
 
 .about-section-detail {
@@ -49,14 +44,13 @@
     // padding-left: 2rem;
 
     &-title {
-        // font-family: $font-secondary;
         font-size: 3rem;
         padding: 0;
         margin: 0;
         margin-bottom: 1.5rem;
         display: inline-block;
-        font-family: $font-secondary;
-        text-transform: uppercase;
+        font-family: $font-primary;
+        // text-transform: uppercase;
         // font-weight: 700;
         color: $med-pink-alt;
         // text-shadow: 1px 1px 10px #2ca8b1bd;
@@ -67,6 +61,7 @@
         list-style-type: none;
         padding-left: 0;  
         margin-top: 0;
+        font-family: $font-secondary;
         // margin-left: 5rem;
         
     }
@@ -83,6 +78,7 @@
     color: white;
     display: inline-block;
     padding: .2rem 0;
+    font-size: 2rem;
     
     // background-color: $med-pink-alt;
     // padding: .2rem .5rem;
@@ -125,6 +121,7 @@
     padding: 5rem;
     width: 60%;
     display: inline-block;
+    box-sizing: border-box;
 }
 
 
@@ -136,17 +133,28 @@
 
 @media (max-width: 500px) {
 
+    .about-container {
+        display: block;
+        box-sizing: border-box !important;
+    }
     .about-section {
-        margin: 0 2.5rem;
-        padding: 2.5rem 0;
+        margin: 0;
+        padding: 2rem;
         border: none;
-        background-color: rgba(0, 0, 0, 0);
-        background-size: cover;
+        width: 100%;
+        
         // font-size: 75%;
         &-title {
             font-size: 5rem;
         }
+
+        // .about-skills {
+        //     display: block;
+        //     margin: 0;
+        //     padding: 2rem;
+        // }
     }
+
 
     .about-story, .about-skills {
         // width: 100%;
@@ -155,16 +163,20 @@
 
     .about-story {
         margin-right: 0rem;
-        width: 100%;
-        font-size: 80%;
+        // width: 100%;
+        font-size: 90%;
     }
 
     .about-skills {
-        margin-left: 0rem;
-        width: 100%;
+        margin: 0;
+        padding: 2rem;
+        width: 90%;
+        
 
         &-set{
-            width: 100%;  
+            padding: 0;
+            
+
         }
         
     }
@@ -176,21 +188,12 @@
     }
 
     .about-skills-list {
-        font-size: 1.75rem;
         margin-bottom: 1rem;
-       
-    }
-
-    .fa-asterisk {
-        font-size: 2rem;
-        left: -2.5rem;
+        .about-skill {
+            font-size: 70%;
+        }
     }
 
 
   }
 
-  @media (max-width: 500px) {
-    .about-section-detail {
-      display: block;
-    }
-  }
