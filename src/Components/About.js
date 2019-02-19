@@ -1,7 +1,13 @@
 import React from 'react';
 
-let techSkills = ['HTML', 'CSS', 'SASS/SCSS', 'JavaScript', 'JQuery', 'React', 'APIs', 'npm'];
-const addtlSkills = ['JIRA', 'Bitbucket', 'Basecamp', 'Project Management', 'Photoshop', 'Data-Driven Analysis', 'Google Analytics']
+// let techSkills = ['HTML', 'CSS', 'SASS/SCSS', 'JavaScript', 'JQuery', 'React', 'APIs', 'npm'];
+// const addtlSkills = ['JIRA', 'Bitbucket', 'Basecamp', 'Project Management', 'Photoshop', 'Data-Driven Analysis', 'Google Analytics']
+
+let techSkills = ['HTML, CSS, Sass/SCSS', 'JavaScript -  JQuery, React', 'APIs', 'npm', 'Version Control -  Git/GitHub', 'Responsive Design -  Bootstrap, Flexbox', 'Issue Tracking -  JIRA, BitBucket', 'Project Management -  Basecamp, Trello, Waffle', 'UX + Design -  Moqups, Figma, Photoshop, Ilustrator'];
+
+
+
+
 
 
 
@@ -11,47 +17,38 @@ function About(listItems) {
 
     return (
         <div className="about-container" id="section-about">
-            <div className="about-section">
+            <div className="about-container-inner">
+                <div className="about-section">
 
-                <div className="about-section-detail">
-                    <div className="about-story">
-                        <h1 className="about-section-title">About</h1>
-                        <p>
-                            <b>I'm a creative, detail-oriented front-end developer, UX enthusiast, analytical thinker, problem-solver, life-long learner, and cat <i className="fas fa-cat"></i> lover — who likes to make things look good.</b>
+                    <div className="about-section-detail">
+                        <div className="about-story">
+                            <h1 className="about-section-title">About</h1>
+                            <p>
+                                <b>I'm a creative, detail-oriented front-end developer, UX enthusiast, analytical thinker, problem-solver, life-long learner, and cat <i className="fas fa-cat"></i> lover — who likes to make things look good.</b>
 
-                            <p>Before I built beautiful websites, I worked in Market Research where I performed data analysis 
-                                to help businesses better understand their consumers' needs,
+                                <p>Before I built beautiful websites, I worked in Market Research where I performed data analysis
+                                    to help businesses better understand their consumers' needs,
                             and advised on business decisions to help them increase their bottom line.</p>
 
-                            As a developer, I get to combine my love for understanding users and love for building, creating, and solving problems with code.
+                                As a developer, I get to combine my love for understanding users and love for building, creating, and solving problems with code.
                             </p>
-                        <p>Check out some of <a href="#section-projects">my recent projects!</a></p>
+                            <p>Check out some of <a href="#section-projects">my recent projects!</a></p>
+                        </div>
                     </div>
+
                 </div>
+                <div className="about-skills">
+                    <div className="about-skills-set">
 
-            </div>
-            <div className="about-skills">
-                <div className="about-skills-set">
+                        <h2 className="about-skills-title">[ skills ]</h2>
 
-                    <h2 className="about-skills-title">[ technology ]</h2>
+                        <ul className="about-skills-list">
+                            {techSkills.map((skill) => <li className="about-skill">{skill}</li>)}
+                        </ul>
+                    </div>
 
-                    <ul className="about-skills-list">
-                        {techSkills.map((skill) => <li className="about-skill">{skill}<span className="divider divider-about">/</span></li>)}
-                    </ul>
-                </div>
-                <div className="about-skills-set">
-
-                    <h2 className="about-skills-title">[ skills ]</h2>
-
-                    <ul className="about-skills-list">
-                        {addtlSkills.map((skill) => <li className="about-skill">{skill}<span className="divider divider-about">/</span></li>)}
-                    </ul>
                 </div>
             </div>
-
-
-
-
         </div>
     )
 
@@ -76,3 +73,15 @@ export default About;
 // <i className="fas fa-asterisk about-asterisk"></i>
 
 // <hr className="line-horiz-about" />
+
+
+// <div className="about-skills-set">
+
+//                     <h2 className="about-skills-title">[ skills ]</h2>
+
+//                     <ul className="about-skills-list">
+//                         {addtlSkills.map((skill) => <li className="about-skill">{skill}<span className="divider divider-about">/</span></li>)}
+//                     </ul>
+//                 </div>
+
+// <span className="divider divider-about">/</span>

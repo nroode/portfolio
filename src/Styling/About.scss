@@ -13,7 +13,12 @@
     background-size: cover;
     background-blend-mode: lighten;
 
-    display: flex;
+    
+
+    &-inner {
+        display: flex;
+        margin: $inside-margin;
+    }
 }
 
 .about-section-title {
@@ -34,8 +39,9 @@
     // flex-grow: 1;
 
     width: 40%;
-    margin: 5rem 5rem 5rem 0;
-    padding: 5rem 5rem 5rem 0;
+    // margin: 5rem 5rem 5rem 0;
+    margin: 0;
+    padding: 5rem;
 
     display: inline-block;
 
@@ -59,6 +65,7 @@
 
     &-list {
         list-style-type: none;
+
         padding-left: 0;  
         margin-top: 0;
         font-family: $font-secondary;
@@ -67,7 +74,7 @@
     }
 
     &-set {
-        padding: 1rem;
+        // padding: 1rem;
         width: 100%;
         margin-bottom: 1rem;
         position: relative;
@@ -80,9 +87,18 @@
     padding: .2rem 0;
     font-size: 2rem;
     
+    
     // background-color: $med-pink-alt;
     // padding: .2rem .5rem;
     // margin: .5rem .5rem;
+
+    &::before {
+        content: "\25AA"; 
+        color: rgba(254, 223, 223, 0.596);
+        display: inline-block; 
+        width: 2rem;
+        margin-left: 1rem
+    }
     
 }
 
@@ -115,7 +131,7 @@
 
 
 .about-section {
-    margin: $inside-margin;
+    
     padding: 10rem 0;
     border: 5px solid white;
     padding: 5rem;
@@ -131,52 +147,108 @@
     color: $med-pink-alt; 
 }
 
-@media (max-width: 500px) {
+// @media (max-width: $screen-lg) {
+//     .about-container {
+//         display: block;
+//         box-sizing: border-box !important;
+//     }
 
-    .about-container {
-        display: block;
-        box-sizing: border-box !important;
+// }
+
+@media (max-width: $screen-xl) {
+    .about-story, .about-skills {
+        font-size: 1.75rem;
     }
+}
+
+@media (max-width: $screen-lg) {
+
+    .about-container-inner {
+        display: block;
+        
+    }
+
     .about-section {
-        margin: 0;
-        padding: 2rem;
-        border: none;
+        // margin: 0;
+        // padding: 2rem;
+        // border: none;
         width: 100%;
         
-        // font-size: 75%;
-        &-title {
-            font-size: 5rem;
-        }
-
-        // .about-skills {
-        //     display: block;
-        //     margin: 0;
-        //     padding: 2rem;
+        // &-title {
+        //     font-size: 5rem;
         // }
     }
 
 
     .about-story, .about-skills {
-        // width: 100%;
+        font-size: 2rem;
+    }
+
+    // .about-story {
+    //     margin-right: 0rem;
+    //     font-size: 90%;
+    // }
+
+    .about-skills {
+        width: 90%;
+        
+        // &-set{
+        //     padding: 0;
+        // }
+    }
+
+    // .about-skills-title {
+    //     font-size: 2.5rem;
+    //     margin-bottom: 1rem;
+        
+    // }
+
+    .about-skills-list {
+        margin-bottom: 1rem;
+        // .about-skill {
+        //     font-size: 70%;
+        // }
+    }
+
+
+  }
+
+  @media (max-width: $screen-xs) {
+
+    .about-container-inner {
+        margin: 2rem;
+    }
+
+    .about-section {
+        margin: 0;
+        padding: 0rem;
+        border: none;
+        width: 100%;
+    
+        &-title {
+            font-size: 5rem;
+        }
+    }
+
+
+    .about-story, .about-skills {
         font-size: 2rem;
     }
 
     .about-story {
         margin-right: 0rem;
-        // width: 100%;
         font-size: 90%;
     }
 
     .about-skills {
         margin: 0;
-        padding: 2rem;
-        width: 90%;
+        padding: 2rem 0 0 0;
+        width: 100%;
         
 
         &-set{
             padding: 0;
             
-
         }
         
     }

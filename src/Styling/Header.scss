@@ -20,6 +20,7 @@
     
     display: flex;
     flex-direction: column;
+    
 }
 
 // .name {
@@ -27,7 +28,7 @@
 // }
 
 .header-description {
-    
+    width: 100%;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
     
@@ -53,9 +54,15 @@
 .header-hello {
     color: black;
     background: white;
+    // position: absolute;
+    // top: -5.5rem;
+    // left: 25rem;
+
     position: absolute;
-    top: -5.5rem;
-    left: 25rem;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
     font-size: 9rem;
     margin: 0;
     padding: 0 2rem;
@@ -65,16 +72,22 @@
 .header-divider {
     color: $med-pink;
     font-size: 5rem;
-    padding: 0 1.5rem;
+    // padding: 1rem 0rem;
     
 }
 
 .header-intro {
     font-family: $font-secondary;
-    font-size: 10rem;
+
+    font-size: 11rem;
+    display: flex;
+    justify-content: space-evenly;
+    // width: 100%;
+
     padding: 0;
     margin: 0;
-    font-weight: 700;
+    font-weight: 400;
+    
     
     text-transform: uppercase;
     color: $med-pink;
@@ -118,8 +131,62 @@
     }
 }
 
+@media (max-width: $screen-xl) {
+    .header-description {
+        
+        &-links {
+            width: 80%;
+        }
+    }
 
-@media (max-width: 500px) {
+    .header-intro {
+        font-size: 10.5rem; 
+    }
+
+    // .header-divider {
+    //     font-size: 3rem;
+    //     padding: 1rem 0rem;
+    // }
+
+    
+}
+
+@media (max-width: $screen-lg) {
+    
+    .header-intro {
+        font-size: 8rem;
+        &-tagline {
+            font-size: 3.5rem;
+        }
+    }
+
+    .nav-section-links {
+        .header-divider, .nav-section {
+            font-size: 2.5rem;
+            padding: .3rem;
+        }
+    }
+}
+
+@media (max-width: $screen-m) {
+    
+    .header-intro {
+        font-size: 6rem;
+
+        
+
+        &-tagline {
+            font-size: 3rem;
+        }
+    }
+    .header-hello {
+        font-size: 6rem;
+    } 
+
+    
+}
+
+@media (max-width: $screen-xs) {
 
     .contact-links {
         right: .5rem;
@@ -129,29 +196,27 @@
         }
     }
 
-    .header-description-container {
-        padding: 0;
-
-        .header-intro {
-            font-size: 3rem;
-    
-            &-tagline {
-                font-size: 2rem;
-            }
-        }
-    
-    }
-
     .header-description {
         border-top: 1px solid black;
         border-bottom: 1px solid black;
         padding: 3rem 0;
 
         &-container {
+            padding: 0;
             margin: 10rem 2rem;
             text-align: center;
             border: 3px solid black;
+
+            .header-intro {
+                font-size: 3.6rem;
+        
+                &-tagline {
+                    font-size: 2rem;
+                }
+            }
+
         }
+
         &-links {
             width: 90%;
             margin-top: 7rem;
@@ -167,8 +232,6 @@
 
     .header-hello{
         font-size: 4rem;
-        top: -2.5rem;
-        left: 5rem;
     }
     
 
@@ -189,3 +252,20 @@
     }
 
 }
+
+// @media (max-width: $screen-m) {
+
+//     &-container {
+//         .header-intro {
+
+//             font-size: 6rem;
+    
+//             &-tagline {
+//                 font-size: 4rem;
+//             }
+//         }
+//     }
+// }
+
+
+

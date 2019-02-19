@@ -1,7 +1,16 @@
 import React from 'react';
 import Navigation from './Navigation.js';
 
+
+
 function Header() {
+    const intro = "I'm Natalie Roode";
+    const introArr = intro.split('');
+    introArr.forEach((char, i) => {if (char === " ") {introArr[i] = `\u00A0` }});
+    // const introArr = ['I', "'", 'm', `\u00A0` , 'N', 'a', 't', 'a', 'l', 'i', 'e', '\u00A0', 'R', 'o', 'o', 'd', 'e']
+    console.log(introArr);
+    const introSpan = introArr.map(letter => <div> {letter} </div>);
+
     return (
         <div className="header-container">
             <div className="contact-links">
@@ -13,7 +22,7 @@ function Header() {
                 <div className="header-description-links">
                     <div className="header-description">
                         <h1 className="header-hello">Hello</h1>
-                        <h1 className="header-intro">I'm <span className="name">Natalie Roode </span></h1>
+                        <h1 className="header-intro">{introSpan}</h1>
                         <p className="header-intro-tagline">I'm a Front-End Developer and UX Enthusiast with a passion for Design, based out of Los Angeles.  </p>
                     </div>
                     <div className="nav-section-links">

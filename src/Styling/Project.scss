@@ -16,7 +16,7 @@
 
 .project-image {
     width: 90%;
-    border: 10px solid rgba(255, 255, 255, 0.167);
+    border: 1px solid rgb(228, 228, 228);
     margin: 1rem 0rem;
     z-index: 3;
     position:relative; 
@@ -189,31 +189,126 @@ h2 {
     
 }
 
-@media (max-width: 500px) {
+// @media (max-width: $screen-xl) {
+//     .bg-project, .prod-project {
+//         margin-left: 8rem;
+    
+//         .project-number-outline {
+            
+//                 left: -10rem;
+//         }
+//     }
+// }
+
+@media (max-width: $screen-lg) {
+    .project-container {
+        display: block;
+        
+        .project-section-right {
+            padding-left: 0rem;
+            display: block;
+            width: 100%;
+        }
+
+        .project-section-left {
+            // display: block;
+
+            width: 100%;
+            order: 2;
+        }
+
+        .project-images {
+            display: block;
+        }
+
+        .project-image {
+            width: 50%;
+            padding: .5rem;
+            padding-bottom: 3rem;
+            box-sizing: border-box;
+            // margin: .5rem auto;
+            z-index: 3;
+            // display: block;
+            border: 0px;
+
+            &-main {
+                z-index: 5;
+            }
+
+            &-secondary {
+                z-index: 1;
+                // display: none;
+            }
+        }
+
+        
+    } 
+
+    .project-number {
+        font-size: 18rem;
+    }
+
+    .bg-project, .prod-project {
+        margin-left: 8rem;
+    
+        .project-number-outline {
+                left: -10rem;
+        }
+    }
+
+    .dragon-project {
+        margin-right: 8rem;
+    
+        .project-number-outline {
+                right: -10rem;
+        } 
+    }
+
+}
+
+@media (max-width: $screen-m) {
+    .bg-project, .prod-project {
+        margin-left: 0rem;
+    
+        .project-number-outline {
+            display: none;
+        }
+    }
+
+    .dragon-project {
+        margin-right: 0rem;
+    
+        .project-number-outline {
+                display: none;
+        } 
+    }
+}
+
+@media (max-width: $screen-xs) {
     h2 {
         font-size: 3rem;
     }
     
     .project-container {
-      display: block;  
+    //   display: block;  
       font-size: 80%;  
       margin: 2rem 0;
-      border: 1px solid black;
+      border: 3px solid black;
 
-      .project-section-right {
-        padding-left: 0rem;
-        display: block;
-        width: 100%;
+    //   .project-section-right {
+    //     padding-left: 0rem;
+    //     display: block;
+    //     width: 100%;
         
-        // flex-direction: column;
-        // justify-content: center;
-        }
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     }
 
-        .project-section-left {
-        display: block;
-        width: 100%;
-        order: 2;
-        }
+        // .project-section-left {
+        // display: block;
+        // width: 100%;
+        // order: 2;
+        // }
 
         .project-images {
             display: block;
@@ -223,7 +318,6 @@ h2 {
             position: relative;
             margin-bottom: 2rem;
             
-
         }
 
         .project-demo-btn {
@@ -237,24 +331,24 @@ h2 {
         }
 
         .project-image {
-            // width: 80%;
-            margin: .5rem auto;
-            z-index: 3;
+            
+            // margin: .5rem auto;
+            // z-index: 3;
             display: block;
-            border: 0px;
+            padding-bottom: 0rem;
+            width: 100%;
+            // border: 0px;
 
             &-main {
                 z-index: 5;
-                // position: absolute;
-                // right: 0rem;
-                // top: 5rem;
             }
 
             &-secondary {
-                z-index: 1;
+                // z-index: 1;
                 display: none;
             }
         }
     }
  
 }
+
