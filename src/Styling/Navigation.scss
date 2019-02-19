@@ -19,11 +19,14 @@
 
 .nav-section-links {
     text-transform: uppercase;
-    display: inline-block;
-    padding: .5rem;
-    margin-right: 2rem;
+    // display: inline-block;
+    // padding: .5rem;
+    // margin-right: 2rem;
     font-family: $font-secondary;
     width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
 
 }
 
@@ -31,15 +34,16 @@
     padding: 1rem 1.5rem 1rem 0rem;
     display: inline-block;
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 4rem;
     font-weight: 700;
     
     
     a {
         color: black;
         text-decoration: none;
-        font-size: 4rem;
         font-weight: 400;
+        width: 100%;
+
         // padding: .5rem 1rem;
 
 
@@ -49,4 +53,21 @@
         }
     }
     
+}
+
+@media (max-width: $screen-xl) {
+    .nav-section a {
+   font-size: 3rem;
+    }
+}
+
+@media (max-width: $screen-lg) {
+    .nav-section a {
+   font-size: 2rem;
+    }
+
+    .nav-section .header-divider {
+        font-size: 2rem;
+        // padding: 1rem 0rem;
+    }
 }

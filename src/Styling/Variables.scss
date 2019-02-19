@@ -26,3 +26,13 @@ $outside-margin: 2rem;
 $inside-margin: 5rem;
 
 
+//breakpoints
+// @media all and (max-width: 1199px) { ... } 
+// @media all and (max-width: 991px) { ... } 
+// @media all and (max-width: 768px) { ... } 
+// @media all and (max-width: 575px) { ... }
+
+$screen-xs: 575px;
+$screen-m: 768px;
+$screen-lg: 991px;
+$screen-xl: 1199px;

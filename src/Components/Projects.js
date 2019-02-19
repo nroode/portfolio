@@ -15,10 +15,10 @@ let featuredProjects = [
     {
         title: 'Better Groceries',
         role: 'Developer',
-        affiliation: "Philosophie Group Inc. - Product for Good",
+        affiliation: "Philosophie Group Inc. + Better Eating International - Product for Good",
         subTitle: '[ the vegan food finder ]',
         tech: ['React.js', 'Styled Components', 'Unstated', 'PostgreSQL',],
-        description: 'Developed for Better Eating International, the Better Groceries app was created to help transitioning vegans.  This app serves as a source of education on vegan alternatives and makes shopping for vegan products easier by connecting users with product locators.  Web app includes a public view for product searches and an admin view where administrators can add new products to the database or update current product information.',
+        description: 'The Better Groceries app was created to help transitioning vegans; it makes shopping for vegan products easier by connecting users with product locators and educating on vegan alternatives.  The app includes a public view for product searches and an admin view where the database of product information can be updated.',
         github: false,
         githubLink: '',
         liveDemo: 'https://staging--better-groceries.netlify.com/',
