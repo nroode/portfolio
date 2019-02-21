@@ -6,11 +6,12 @@ import BetterGroceriesAdmin from './ProjectImages/BetterGroceriesAdmin.png';
 
 export default class Project extends Component {
     render() {
+        const techArr = this.props.featuredProjects.tech;
         return (
             <div className={"project-container " + this.props.featuredProjects.projClass}>
                 <div className="project-number-outline">
-                   <p className="project-number">{this.props.number}</p>
-                   
+                    <p className="project-number">{this.props.number}</p>
+
                 </div>
                 <div className="project-section-left">
 
@@ -28,7 +29,10 @@ export default class Project extends Component {
                     </div>
                     <div>
                         <p className="project-description">{this.props.featuredProjects.description}</p>
-                        <p className="project-tech">{this.props.featuredProjects.tech.map((skill) => <span className="tech-skill">{skill}<span className="divider">/</span></span>)}</p>
+                        <p className="project-tech">{this.props.featuredProjects.tech.map((skill) => <span className="tech-skill">{skill}
+                            {((techArr.length - 1) !== techArr.indexOf(skill)) ? <span className="divider">/</span> : ''}
+                        </span>)}
+                        </p>
                     </div>
                     <div className="project-link-btns">
                         <button className="project-demo-btn github-btn"><a target="_blank" rel="noopener noreferrer" href={this.props.featuredProjects.liveDemo}>Demo</a></button>

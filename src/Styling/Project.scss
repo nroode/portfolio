@@ -41,23 +41,35 @@
 
 .bg-project, .dragon-project, .prod-project {
     color: $dark-grey;
-    h2, h3 {
+    h2 {
         color: $med-pink;
+    }
+    
+    h3 {
+        color: #fea49f;
     }
 
     button {
-        border: 2px solid $med-pink; 
+        background: $med-pink;
+        border: 2px solid $bright-pink; 
+        box-shadow: 3px 3px 0px rgb(0, 0, 0);
+       
         a {
             text-decoration: none;
-            color: $med-pink;
+            // color: $med-pink;
+            color: white;
             font-weight: 700;
-            
-        }  
+            font-size: 1.75rem;
+        } 
+
         &:hover {
-            background: $med-pink;  
+            // background: $med-pink;
+            border: 2px solid $bright-pink; 
+            background: white;  
             
             a {
-                color: white;
+                // color: white;
+                color: $bright-pink;
             }
             // background: linear-gradient(to right, #fc6b63, #ffa382);
             // background: linear-gradient(to right, #fc6b63, #ffa382);
@@ -158,6 +170,7 @@ h2 {
     font-size: 25rem;
     font-family: $font-secondary;
     margin: 0;
+    text-shadow: 3px 3px 0px rgb(206, 191, 191);
     color: $med-pink;
     // background: linear-gradient(to bottom, #fc6b63, rgb(255, 57, 77));
     // background: -webkit-linear-gradient(to bottom, #fc6b63, rgb(255, 57, 77));
