@@ -1,9 +1,9 @@
 import React from 'react';
 
-// let techSkills = ['HTML', 'CSS', 'SASS/SCSS', 'JavaScript', 'JQuery', 'React', 'APIs', 'npm'];
-// const addtlSkills = ['JIRA', 'Bitbucket', 'Basecamp', 'Project Management', 'Photoshop', 'Data-Driven Analysis', 'Google Analytics']
+let techSkills = ['HTML', 'CSS', 'Sass + SCSS', 'JavaScript', 'JQuery', 'React', 'git + Github', 'APIs', 'npm', 'Bootstrap', 'Flexbox', 'JIRA', 'Bitbucket', 'Basecamp', 'Photoshop'];
+const addtlSkills = ['Project Management', 'Data-Driven Analysis', 'Google Analytics', 'Business Insights']
 
-let techSkills = ['HTML, CSS, Sass/SCSS', 'JavaScript -  JQuery, React', 'APIs', 'npm', 'Version Control -  Git/GitHub', 'Responsive Design -  Bootstrap, Flexbox', 'Issue Tracking -  JIRA, BitBucket', 'Project Management -  Basecamp, Trello, Waffle', 'UX + Design -  Moqups, Figma, Photoshop, Ilustrator'];
+// let techSkills = ['HTML, CSS, Sass/SCSS', 'JavaScript -  JQuery, React', 'APIs', 'npm', 'Version Control -  Git/GitHub', 'Responsive Design -  Bootstrap, Flexbox', 'Issue Tracking -  JIRA, BitBucket', 'Project Management -  Basecamp, Trello, Waffle', 'UX + Design -  Moqups, Figma, Photoshop, Ilustrator'];
 
 
 
@@ -17,7 +17,7 @@ function About(listItems) {
 
     return (
         <div className="about-container" id="section-about">
-            <div className="about-container-inner">
+            <div className="about-container-inner container">
                 <div className="about-section">
 
                     <div className="about-section-detail">
@@ -39,15 +39,23 @@ function About(listItems) {
                 </div>
                 <div className="about-skills">
                     <div className="about-skills-set">
-
-                        <h2 className="about-skills-title">[ skills ]</h2>
-
+                        <h2 className="about-skills-title">[ technology ]</h2>
                         <ul className="about-skills-list">
-                            {techSkills.map((skill) => <li className="about-skill">{skill}</li>)}
+                            {techSkills.map((skill) => <li className="about-skill">{skill}
+                                {((techSkills.length - 1) !== techSkills.indexOf(skill)) ? <span className="divider divider-about">/</span> : ''}
+                            </li>)}
                         </ul>
                     </div>
-
+                    <div className="about-skills-set">
+                        <h2 className="about-skills-title">[ skills ]</h2>
+                        <ul className="about-skills-list">
+                            {addtlSkills.map((skill) => <li className="about-skill">{skill}
+                                {((addtlSkills.length - 1) !== addtlSkills.indexOf(skill)) ? <span className="divider divider-about">/</span> : ''}
+                            </li>)}
+                        </ul>
+                    </div>
                 </div>
+
             </div>
         </div>
     )
@@ -75,13 +83,6 @@ export default About;
 // <hr className="line-horiz-about" />
 
 
-// <div className="about-skills-set">
 
-//                     <h2 className="about-skills-title">[ skills ]</h2>
-
-//                     <ul className="about-skills-list">
-//                         {addtlSkills.map((skill) => <li className="about-skill">{skill}<span className="divider divider-about">/</span></li>)}
-//                     </ul>
-//                 </div>
 
 // <span className="divider divider-about">/</span>
