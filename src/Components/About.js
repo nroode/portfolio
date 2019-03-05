@@ -26,9 +26,9 @@ function About(listItems) {
                             <p>
                                 <b>I'm a creative, detail-oriented front-end developer, UX enthusiast, analytical thinker, problem-solver, life-long learner, and cat <i className="fas fa-cat"></i> lover — who likes to make things look good.</b>
 
-                                <p>Before I built beautiful websites, I worked in Market Research where I performed data analysis
-                                    to help businesses better understand their consumers' needs,
-                            and advised on business decisions to help them increase their bottom line.</p>
+                                <p>Before I built beautiful websites, I was a Market Researcher.  I spent my days working closely with data, ensuring its quality, analyzing large data sets
+                                    to help businesses understand their consumers' needs,
+                            and advised on business strategy.  However, I ultimately sought a career that would make greater use of my creativity.</p>
 
                                 As a developer, I get to combine my love for understanding users and love for building, creating, and solving problems with code.
                             </p>
