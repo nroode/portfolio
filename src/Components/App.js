@@ -17,7 +17,7 @@ class App extends Component {
             <About name="section-about" />
             <Projects name="section-projects"  />
             <Contact name="section-contact"  />
-          </div>
+        </div>
     );
   }
 }
