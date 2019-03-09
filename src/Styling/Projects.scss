@@ -85,12 +85,28 @@ a.github-link {
         justify-content: space-between;
         
         .bg-project, .dragon-project, .prod-project {
-            padding: 1rem;
+            padding: 0rem;
         }
+    }
+
+    
+
+    .project-image.project-image-main {
+        padding: 0;
+        margin: 0;
+    }
+
+    .project-section-right {
+        box-sizing: border-box;
+        padding: 1rem !important;
     }
 
     .project-section-left, .project-section-right {
         width: 100%;
+
+        .project-images {
+            margin-bottom: 0;
+        }
     }
     // .project-section-right {
     //     margin-bottom: 10rem;
