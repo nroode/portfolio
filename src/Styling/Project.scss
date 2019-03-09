@@ -24,7 +24,7 @@
     // filter: invert(0.2) grayscale(80%) hue-rotate(330deg) brightness(1.2);
     // -webkit-filter: invert(0.2) hue-rotate(330deg) brightness(1.2) grayscale(80%);
     // display: inline-block
-    transition: .5s all ease;
+    transition: .5s all ease-out;
 
     &:hover {
         filter: none; 
@@ -50,28 +50,29 @@
     }
 
     button {
-        background: $bright-pink;
-        border: 2px solid $bright-pink; 
-        box-shadow: 3px 3px 0px rgb(0, 0, 0);
+        background: white;
+        border: 2px solid $med-pink; 
+        // box-shadow: 3px 3px 0px rgb(0, 0, 0);
         width: 45%;
+        max-width: 200px;
         
        
         a {
             text-decoration: none;
             // color: $med-pink;
-            color: white;
+            color: $med-pink;
             font-weight: 700;
             font-size: 1.75rem;
         } 
 
         &:hover {
             // background: $med-pink;
-            border: 2px solid $bright-pink; 
-            background: white;  
+            border: 2px solid $med-pink; 
+            background: $bright-pink;  
             
             a {
                 // color: white;
-                color: $bright-pink;
+                color: white;
             }
             // background: linear-gradient(to right, #fc6b63, #ffa382);
             // background: linear-gradient(to right, #fc6b63, #ffa382);
@@ -91,12 +92,22 @@
 
 }
 
+// .bg-project {
+
+//     .project-number-outline {
+//     color: $med-pink;
+//     -webkit-text-fill-color: rgba(255, 255, 255, 0); 
+//     -webkit-text-stroke-width: 3px;
+//     -webkit-text-stroke-color: $med-pink;
+//     }
+// }
+
 .bg-project, .prod-project {
     margin-left: 15rem;
 
     .project-number-outline {
         // position: absolute;
-            left: -13rem;
+            left: -15rem;
     }
 }
 
@@ -117,7 +128,7 @@
 
         &-outline{
             position: absolute;
-            right: -13rem;
+            right: -15rem;
         }
     }
 
@@ -172,7 +183,7 @@ h2 {
     font-size: 25rem;
     font-family: $font-secondary;
     margin: 0;
-    text-shadow: 3px 3px 0px rgb(206, 191, 191);
+    // text-shadow: 3px 3px 0px rgb(206, 191, 191);
     color: $med-pink;
     // background: linear-gradient(to bottom, #fc6b63, rgb(255, 57, 77));
     // background: -webkit-linear-gradient(to bottom, #fc6b63, rgb(255, 57, 77));
@@ -321,27 +332,23 @@ h2 {
     h2 {
         font-size: 3rem;
     }
+
+    .tech-skill {
+        font-size: 1.5rem;
+    }
+
+    .project-demo-btn {
+        // width: 80%;
+        height: 4rem;
+        font-size: .9rem;
+        line-height: 1rem;
+    }
     
     .project-container {
     //   display: block;  
       font-size: 80%;  
       margin: 2rem 0;
       border: 3px solid black;
-
-    //   .project-section-right {
-    //     padding-left: 0rem;
-    //     display: block;
-    //     width: 100%;
-        
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     }
-
-        // .project-section-left {
-        // display: block;
-        // width: 100%;
-        // order: 2;
-        // }
 
         .project-images {
             display: block;
@@ -355,8 +362,11 @@ h2 {
 
         .project-demo-btn {
             width: 45%;
-            font-size: 1.5rem;
             margin-right: 1rem;
+
+            a {
+                font-size: 1.5rem;
+            }
         }
 
         .project-number {
@@ -370,6 +380,7 @@ h2 {
             display: block;
             padding-bottom: 0rem;
             width: 100%;
+            
             // border: 0px;
 
             &-main {
@@ -381,6 +392,8 @@ h2 {
                 display: none;
             }
         }
+
+
     }
  
 }
