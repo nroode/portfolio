@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigation from './Navigation.js';
+// import Navigation from './Navigation.js';
 
 
 
@@ -15,8 +15,8 @@ function Header() {
         <div className="header-container">
             <div className="contact-links">
                 <a href="mailto:nroode@gmail.com"><i className="far fa-envelope"></i></a>
-                <a href="https://github.com/nroode" target="_blank"><i className="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/natalie-roode-2b19628/" target="_blank"><i className="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/nroode" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/natalie-roode-2b19628/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
             </div>
             <div className="header-description-container">
                 <div className="header-description-links">
