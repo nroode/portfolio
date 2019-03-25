@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import BetterGroceriesPublic from './ProjectImages/BetterGroceriesPublic.png';
-import BetterGroceriesAdmin from './ProjectImages/BetterGroceriesAdmin.png';
+// import BetterGroceriesPublic from './ProjectImages/BetterGroceriesPublic.png';
+// import BetterGroceriesAdmin from './ProjectImages/BetterGroceriesAdmin.png';
 // import { prependOnceListener } from 'cluster';
 
 
@@ -16,8 +16,8 @@ export default class Project extends Component {
                 <div className="project-section-left">
 
                     <div className="project-images">
-                        <img src={this.props.featuredProjects.image} className="project-image project-image-main"></img>
-                        <img src={this.props.featuredProjects.imageSecondary} className="project-image project-image-secondary"></img>
+                        <img src={this.props.featuredProjects.image} className="project-image project-image-main" alt="project-screenshot"></img>
+                        <img src={this.props.featuredProjects.imageSecondary} className="project-image project-image-secondary" alt="project-screenshot"></img>
                     </div>
                 </div>
                 <div className="project-section-right">

@@ -76,7 +76,7 @@ function Projects() {
                      />
                 )}
                 </div>
-                <p className="addtl-projects">To see more of my work, check out my <a href="https://github.com/nroode" className="github-link" target="_blank">gitHub</a></p>
+                <p className="addtl-projects">To see more of my work, check out my <a href="https://github.com/nroode" className="github-link" target="_blank" rel="noopener noreferrer">gitHub</a></p>
             </div>
         </div>
     )
