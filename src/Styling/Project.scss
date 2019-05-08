@@ -39,7 +39,7 @@
     
 }
 
-.bg-project, .dragon-project, .prod-project {
+.bg-project, .dragon-project, .prod-project, .job-project {
     color: $dark-grey;
     h2 {
         color: $med-pink;
@@ -111,7 +111,7 @@
     }
 }
 
-.dragon-project {
+.dragon-project, .job-project {
     margin-right: 15rem;
     .project-section-left{
         order: 2;
@@ -294,7 +294,7 @@ h2 {
 
     
 
-    .dragon-project {
+    .dragon-project, .job-project {
         margin-right: 8rem;
     
         .project-number-outline {
@@ -302,7 +302,7 @@ h2 {
         } 
     }
 
-    .bg-project, .prod-project, .dragon-project {
+    .bg-project, .prod-project, .dragon-project, .job-project {
         button {
             max-width: 200px;
         }
@@ -319,7 +319,7 @@ h2 {
         }
     }
 
-    .dragon-project {
+    .dragon-project, .job-project {
         margin-right: 0rem;
     
         .project-number-outline {

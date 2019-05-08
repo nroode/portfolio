@@ -13,14 +13,14 @@
 
     // background: url('deco2.png');
 
-    // width: 100%;
-    // margin-bottom: $outside-margin;
-    min-height: 100vh;
+
+    // min-height: 100vh;
+    height: 100vh;
     box-sizing: border-box;
     
     display: flex;
     flex-direction: column;
-    
+    padding: 5rem;
 }
 
 // .name {
@@ -37,17 +37,19 @@
     text-align: justify;
     
     &-container {
-        margin: $inside-margin;
+        // margin: $inside-margin;
 
         border: 5px solid black;
         background: white;
-        height: 100%;
+        min-height: 100%;
+        box-sizing: inherit;
         // position: relative;
     }
 
     &-links {
         width: 80rem;
         margin: 10rem auto;
+        box-sizing: inherit;
 
         // position: absolute;
         // top: 0%;
@@ -96,13 +98,15 @@
     
     text-transform: uppercase;
     color: $med-pink;
+    // color: $bright-pink;
+
     // background: linear-gradient(to bottom, #fc6b63, #E23949);
     // background: -webkit-linear-gradient(to bottom, #fc6b63, #E23949);
     // -webkit-background-clip: text;
     // -webkit-text-fill-color: transparent;
 
     &-tagline {
-        color: #fea49f;
+        color: #ff827b;
         font-size: 4rem;
         font-weight: 400;
         padding: 0;
@@ -150,6 +154,10 @@
 
     .header-intro {
         font-size: 10.5rem; 
+
+        &-tagline {
+            font-size: 3.25rem;
+        }
     }
 
     // .header-divider {
@@ -164,9 +172,9 @@
     
     .header-intro {
         font-size: 8rem;
-        &-tagline {
-            font-size: 3.5rem;
-        }
+        // &-tagline {
+        //     font-size: 3.5rem;
+        // }
     }
 
     .nav-section-links {
@@ -212,7 +220,7 @@
 
         &-container {
             padding: 0;
-            margin: 10rem 2rem;
+            // margin: 10rem 2rem;
             text-align: center;
             border: 3px solid black;
 
@@ -238,6 +246,8 @@
 
     .header-container {
         min-height: 50vh;
+
+        padding: 10rem 2rem;
     }
 
     .header-hello{

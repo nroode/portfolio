@@ -8,7 +8,7 @@ function Header() {
     const introArr = intro.split('');
     introArr.forEach((char, i) => {if (char === " ") {introArr[i] = `\u00A0` }});
     // const introArr = ['I', "'", 'm', `\u00A0` , 'N', 'a', 't', 'a', 'l', 'i', 'e', '\u00A0', 'R', 'o', 'o', 'd', 'e']
-    console.log(introArr);
+    // console.log(introArr);
     const introSpan = introArr.map(letter => <div> {letter} </div>);
 
     return (

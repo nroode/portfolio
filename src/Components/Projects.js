@@ -1,6 +1,9 @@
 import React from 'react';
 import Project from './Project.js';
 
+import Job1 from './ProjectImages/Job1.png';
+import Job2 from './ProjectImages/Job2.png';
+
 import BetterGroceriesPublic from './ProjectImages/BetterGroceriesPublic.png';
 import BetterGroceriesAdmin from './ProjectImages/BetterGroceriesAdmin.png';
 
@@ -12,6 +15,21 @@ import Dragon2 from './ProjectImages/Dragon2.png';
 
 let featuredProjects = [
     
+    {
+        title: 'Job Shark',
+        role: 'Front-End Developer + UX Designer',
+        affiliation: "Chingu Developer Network",
+        subTitle: '[ a job tracking app ]',
+        tech: ['React.js (Hooks)', 'SCSS', 'Flexbox', 'Node', 'Express', 'MongoDB'],
+        description: 'This app was created to help job seekers keep track of their progress in the job-search process.  Users are able to log in, where they can add any number of apps.  The Summary provides users with an overview of their search process and can help identify areas to focus.  The app is responsive across screen sizes.',
+        github: true,
+        githubLink: 'https://github.com/chingu-voyages/v8-chimeras-team-04/',
+        liveDemo: 'https://chingu-job-shark.herokuapp.com/',
+        image: Job1,
+        imageSecondary: Job2,
+        projClass: "job-project",
+
+    },
     {
         title: 'Better Groceries',
         role: 'Developer',
@@ -73,6 +91,7 @@ function Projects() {
                     featuredProjects={{...featuredProjects[i]}}
                     number={(i+1)}
                     name="section-projects"
+                    key={project}
                      />
                 )}
                 </div>
