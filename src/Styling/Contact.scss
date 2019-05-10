@@ -18,9 +18,9 @@
     // }
 
     &-action {
-        font-size: 5rem;
+        font-size: 4rem;
         text-align: center;
-        font-family: $font-secondary;
+        font-family: $font-primary;
         color: white;
         
 
@@ -34,6 +34,7 @@
         margin: 0 auto;
         max-width: 65rem;
         padding: 2%;
+        font-family: $font-secondary;
         
      
         a {
@@ -41,12 +42,12 @@
             margin-right: 3rem;
             // display: block;
             text-decoration: none;
-            color: white;
+            color: rgba(255, 255, 255, 0.76);
             font-size: 2rem;
             
 
             &:hover {
-                text-decoration: underline;
+                color: white;
             }
 
         }

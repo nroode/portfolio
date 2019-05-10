@@ -5,7 +5,7 @@
     // margin-bottom: $outside-margin;
     min-height: 100vh;
     box-sizing: border-box;
-    background: $med-pink; 
+    background: rgb(255, 84, 92); 
     // background: #36d1dc;  
     // background: linear-gradient(to right,#36d1dc, #97f3dd); 
     // background: linear-gradient(to right,#36d1dcdd, #97f3dee0);
@@ -53,7 +53,7 @@
     // padding-left: 2rem;
 
     &-title {
-        font-size: 3.3rem;
+        font-size: 4rem;
         padding: 0;
         margin: 0;
         margin-bottom: 1.5rem;
@@ -66,10 +66,10 @@
 
         
 
-        color: $med-pink-alt;
+        color: white;
     -webkit-text-fill-color: rgba(255, 255, 255, 0); 
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: $med-pink-alt;
+    -webkit-text-stroke-color: white;
         
     }
 
@@ -151,7 +151,7 @@
 }
 
 .divider-about {
-    color: #ff8f89; 
+    color: #fe9e99; 
 }
 
 

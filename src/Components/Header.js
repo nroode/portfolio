@@ -23,7 +23,7 @@ function Header() {
                     <div className="header-description">
                         <h1 className="header-hello">Hello</h1>
                         <h1 className="header-intro">{introSpan}</h1>
-                        <p className="header-intro-tagline">I'm a Front-End Developer and UX Enthusiast with a passion for Design, based out of Los Angeles.  </p>
+                        <p className="header-intro-tagline">I'm a Front-End Developer and UX Enthusiast with a passion for Design, based out of the City of Angels (aka Los Angeles).  </p>
                     </div>
                     <div className="nav-section-links">
                         <p className="nav-section"><a href="#section-about">READ MY STORY</a></p><span className="header-divider">/</span>

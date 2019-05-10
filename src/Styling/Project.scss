@@ -46,7 +46,7 @@
     }
     
     h3 {
-        color: #fea49f;
+        color: $med-pink2;
     }
 
     button {
@@ -59,15 +59,15 @@
        
         a {
             text-decoration: none;
-            // color: $med-pink;
             color: $med-pink;
+            
             font-weight: 700;
             font-size: 1.75rem;
         } 
 
         &:hover {
             // background: $med-pink;
-            border: 2px solid $med-pink; 
+            border: 2px solid $light-teal; 
             background: $bright-pink;  
             
             a {
@@ -80,7 +80,7 @@
     }
 
     .divider {
-        color: #fec9ae;  
+        color: $med-pink2;  
     }
 
     .project-role b, .project-context b{

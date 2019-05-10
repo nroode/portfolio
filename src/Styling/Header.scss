@@ -5,8 +5,8 @@
 .header-container {
     
     background: white;  
-    background: linear-gradient(to right, #fc6b63, #ffa382);
-    background: linear-gradient(to right, #fc6b63, #ffa382),
+    background: linear-gradient(to right, rgb(184, 202, 197), rgb(184, 202, 197));
+    background: linear-gradient(to right, rgb(184, 202, 197), rgb(184, 202, 197)),
     url('worn_dots.png');
     
     background-blend-mode: overlay;
@@ -97,21 +97,24 @@
     
     
     text-transform: uppercase;
+    // color: $light-teal;
     color: $med-pink;
-    // color: $bright-pink;
 
-    // background: linear-gradient(to bottom, #fc6b63, #E23949);
-    // background: -webkit-linear-gradient(to bottom, #fc6b63, #E23949);
+    // background: linear-gradient(to bottom, $light-teal, $teal);
+    // background: -webkit-linear-gradient(to bottom, $light-teal, $teal);
     // -webkit-background-clip: text;
     // -webkit-text-fill-color: transparent;
 
     &-tagline {
-        color: #ff827b;
-        font-size: 4rem;
+        color: rgba(105, 105, 105, 0.507);
+        font-size: 3rem;
         font-weight: 400;
         padding: 0;
         margin: 0;
-        line-height: 1.3;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: .3rem;
+        
     }
 }
 
