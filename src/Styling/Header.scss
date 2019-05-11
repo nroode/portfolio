@@ -114,9 +114,10 @@
     // -webkit-text-fill-color: transparent;
 
     &-tagline {
-        color: rgba(105, 105, 105, 0.507);
+        // color: rgba(105, 105, 105, 0.507);
+        color: rgb(70, 70, 70);
         font-size: 3rem;
-        font-weight: 400;
+        font-weight: 300;
         padding-bottom: 4rem;
         margin: 0;
         line-height: 1.5;
