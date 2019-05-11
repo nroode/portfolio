@@ -87,11 +87,12 @@ function Projects() {
                 <hr className="line-horiz-projects"></hr>
                 <div>
                 {featuredProjects.map((project, i)=> 
+                    
                     <Project
                     featuredProjects={{...featuredProjects[i]}}
                     number={(i+1)}
                     name="section-projects"
-                    key={project}
+                    key={i}
                      />
                 )}
                 </div>

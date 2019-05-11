@@ -9,7 +9,7 @@ function Header() {
     introArr.forEach((char, i) => {if (char === " ") {introArr[i] = `\u00A0` }});
     // const introArr = ['I', "'", 'm', `\u00A0` , 'N', 'a', 't', 'a', 'l', 'i', 'e', '\u00A0', 'R', 'o', 'o', 'd', 'e']
     // console.log(introArr);
-    const introSpan = introArr.map(letter => <div> {letter} </div>);
+    const introSpan = introArr.map((letter, index) => <div key={index}> {letter} </div>);
 
     return (
         <div className="header-container">
@@ -20,11 +20,12 @@ function Header() {
             </div>
             <div className="header-description-container">
                 <div className="header-description-links">
-                    <div className="header-description">
+                <div className="header-description">
                         <h1 className="header-hello">Hello</h1>
+                        </div>
                         <h1 className="header-intro">{introSpan}</h1>
                         <p className="header-intro-tagline">I'm a Front-End Developer and UX Enthusiast with a passion for Design, based out of the City of Angels (aka Los Angeles).  </p>
-                    </div>
+                    
                     <div className="nav-section-links">
                         <p className="nav-section"><a href="#section-about">READ MY STORY</a></p><span className="header-divider">/</span>
                         <p className="nav-section"><a href="#section-projects">SEE MY WORK</a></p><span className="header-divider">/</span>

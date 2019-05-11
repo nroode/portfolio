@@ -2,7 +2,6 @@
 
 .project-container {
     display: flex;
-    // flex: 1 1 auto;
     margin: 10rem 0;
     position: relative;
     padding: 5rem;
@@ -80,7 +79,7 @@
     }
 
     .divider {
-        color: $med-pink2;  
+        color: $med-orange;  
     }
 
     .project-role b, .project-context b{

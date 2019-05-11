@@ -29,7 +29,7 @@ export default class Project extends Component {
                     </div>
                     <div>
                         <p className="project-description">{this.props.featuredProjects.description}</p>
-                        <p className="project-tech">{this.props.featuredProjects.tech.map((skill) => <span className="tech-skill">{skill}
+                        <p className="project-tech">{this.props.featuredProjects.tech.map((skill, index) => <span className="tech-skill" key={index}>{skill}
                             {((techArr.length - 1) !== techArr.indexOf(skill)) ? <span className="divider">/</span> : ''}
                         </span>)}
                         </p>

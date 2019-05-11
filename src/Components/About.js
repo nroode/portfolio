@@ -25,11 +25,11 @@ function About(listItems) {
                             <h1 className="about-section-title">About</h1>
                             <p>
                                 <b>I'm a creative, detail-oriented front-end developer, UX enthusiast, analytical thinker, problem-solver, life-long learner, and cat <i className="fas fa-cat"></i> lover — who likes to make things look good.</b>
-
+                            </p>
                                 <p>Before I built beautiful websites, I was a Market Researcher.  I spent my days working closely with data, ensuring its quality, analyzing large data sets
                                     to help businesses understand their consumers' needs,
                             and advised on business strategy.  However, I ultimately sought a career that would make greater use of my creativity.</p>
-
+                            <p>
                                 As a developer, I get to combine my love for understanding users and love for building, creating, and solving problems with code.
                             </p>
                             <p>Check out some of <a href="#section-projects">my recent projects!</a></p>
@@ -41,7 +41,7 @@ function About(listItems) {
                     <div className="about-skills-set">
                         <h2 className="about-skills-title">[ technology ]</h2>
                         <ul className="about-skills-list">
-                            {techSkills.map((skill) => <li className="about-skill">{skill}
+                            {techSkills.map((skill, index) => <li className="about-skill" key={index}>{skill}
                                 {((techSkills.length - 1) !== techSkills.indexOf(skill)) ? <span className="divider divider-about">/</span> : ''}
                             </li>)}
                         </ul>
@@ -49,7 +49,7 @@ function About(listItems) {
                     <div className="about-skills-set">
                         <h2 className="about-skills-title">[ skills ]</h2>
                         <ul className="about-skills-list">
-                            {addtlSkills.map((skill) => <li className="about-skill">{skill}
+                            {addtlSkills.map((skill, index) => <li className="about-skill" key={index}>{skill}
                                 {((addtlSkills.length - 1) !== addtlSkills.indexOf(skill)) ? <span className="divider divider-about">/</span> : ''}
                             </li>)}
                         </ul>
