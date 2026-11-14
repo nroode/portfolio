@@ -56,7 +56,7 @@ export const projectData: Project[] = [
         "Improved site speed by 41% and saved $250K by streamlining the tech stack and reducing engineering overhead.",
     },
     link: "link",
-    images: [aboutGoopImg, goopPlpImg, inPageSearchImg, editorialImg],
+    images: [goopPlpImg, inPageSearchImg, editorialImg, aboutGoopImg],
     tech: [
       "React",
       "TypeScript",
