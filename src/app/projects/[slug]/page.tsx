@@ -30,6 +30,16 @@ function BulletList({ items }: { items: string[] }) {
   );
 }
 
+function Paragraphs({ text }: { text: string }) {
+  return (
+    <div className="flex flex-col gap-3">
+      {text.split("\n\n").map((paragraph) => (
+        <p key={paragraph}>{paragraph}</p>
+      ))}
+    </div>
+  );
+}
+
 const detailLabels: Record<keyof ProjectDetails, string> = {
   problem: "problem",
   what: "solution",
@@ -61,7 +71,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         content: Array.isArray(content) ? (
           <BulletList items={content} />
         ) : (
-          content
+          <Paragraphs text={content} />
         ),
       })),
     { label: "tech", content: <TechList tech={project.tech} /> },

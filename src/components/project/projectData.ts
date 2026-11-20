@@ -45,15 +45,16 @@ export const projectData: Project[] = [
     description: "Shopify replatforming and complete website redesign",
     fullDescription: {
       problem:
-        "goop.com's aging architecture was holding the business back. Internal teams relied on engineering for everyday updates, and a slow checkout had long been a pain point for customers.",
-      what: "Rebuilt goop.com on Shopify alongside a complete site redesign, with a headless front end built on Hydrogen, React Router, and Tailwind CSS. The new platform lets internal teams manage the site on their own and gives customers a much faster checkout.",
+        "goop.com's legacy platform made it difficult for internal teams to manage and update the site independently, creating a reliance on engineering for routine changes. A slow checkout experience was also a longstanding source of friction for customers.",
+      what: "Rebuilt goop.com, migrating from Spree to Shopify alongside a complete site redesign. The headless storefront was built with Shopify Hydrogen, React Router, and Tailwind CSS, integrating Shopify for commerce and Payload CMS for editorial content.",
       role: [
-        "Built site navigation and search, powered by Algolia's search and discovery",
-        "Developed product listing pages with filtering",
-        "Created modular components for building content pages like the homepage, about, and careers pages",
+        "Built site-wide navigation and search, integrating Algolia's search and discovery capabilities",
+        "Developed product listing pages with filtering and product discovery functionality",
+        "Built modular page-building components powered by Shopify metaobjects and Payload CMS, giving internal teams the flexibility to create and manage pages without engineering support",
+        "Developed specialized components for editorial experiences, including articles, recipes, travel guides, and podcasts, integrating content from Payload CMS",
       ],
       result:
-        "Improved site speed by 41% and saved $250K by streamlining the tech stack and reducing engineering overhead.",
+        "Improved site speed by 41% and generated $250K in savings through a streamlined technology stack and reduced engineering overhead.\n\nThe new platform gives internal teams more control over site content and merchandising, streamlines editorial publishing, and delivers a faster shopping experience. Teams can now manage more updates independently, reducing their reliance on engineering.",
     },
     link: "link",
     images: [goopPlpImg, inPageSearchImg, editorialImg, aboutGoopImg],
@@ -65,6 +66,7 @@ export const projectData: Project[] = [
       "React Router",
       "GraphQL",
       "Algolia",
+      "Payload CMS",
     ],
   },
   {
